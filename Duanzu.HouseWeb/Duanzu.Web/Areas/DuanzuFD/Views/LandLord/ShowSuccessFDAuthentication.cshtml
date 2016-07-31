@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "权威认证";
+    Layout = "~/Areas/DuanzuFD/Views/Shared/DuanzuFD.cshtml";
+
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+}
+
+<div class="right fr">
+    <div class="zm_approve">
+        <!--完善资料-->
+        @{
+            if (ViewBag.auitState > 0)
+            {
+        <div class="perfect">
+            <div class="img">
+                <p class="font20 col666">后台审核中，审核通过后您的房源将点亮认证标识！</p>
+            </div>
+        </div>
+            }
+            else
+            { 
+         <div class="perfect">
+            <div class="img">
+                <p class="font20 col666">您已完成
+                @{
+                    if (ViewBag.sfz > 0)
+                    { 
+                    <span><img src="@(staticUrl)web/agent/Resource/images/short/usercenter/zm_per01.png@(version)">身份认证</span>
+                    }
+
+                    if (ViewBag.yyzz > 0)
+                    { 
+                    <span><img src="@(staticUrl)web/agent/Resource/images/short/usercenter/zm_per02.png@(version)">资格认证</span>   
+                    }
+
+                    if (ViewBag.zgzs > 0)
+                    { 
+                    <span><img src="@(staticUrl)web/agent/Resource/images/short/usercenter/zm_per03.png@(version)">营业执照认证</span></p>
+                    }
+                }
+            </div>
+            @{
+                if (ViewBag.sfz <= 0 || ViewBag.yyzz <= 0 || ViewBag.zgzs <= 0)
+                { 
+                <p class="publish">
+                    在您发布的短租房源页面，认证标识将展示给租客
+                </p>
+                <p class="reapply"><a href="/DuanzuFD/LandLord/FDAuthentication">完善资料 再次申请</a></p>
+                }
+            }
+        </div>
+            }
+        }
+    </div>
+</div>
+
+
+

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="House" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <!--返回用户收藏信息-->
+    <typeAlias alias="FavoriteHouseInfo" type="Duanzu.House.DataContract.HouseModel.BusinessModel.FavoriteHouseInfo,Duanzu.House.DataContract" />
+
+
+    <!--查询用户收藏夹-->
+    <typeAlias alias="FavoriteQuery" type="Duanzu.House.DataContract.QueryModel.FavoriteQuery,Duanzu.House.DataContract" />
+  </alias>
+  <statements>
+    <!-- 用户收藏夹 begin-->
+    <select id="SelectAllFavoriteHouses" resultClass="FavoriteHouseInfo">
+      <![CDATA[  
+SELECT  thouse.HouseID ,
+        thouse.UserID ,
+        thouse.ProvinceID ,
+        thouse.CityID ,
+        thouse.Lat ,
+        thouse.Lng ,
+        thouse.AreaID ,
+        thouse.BusinessID ,
+        thouse.Address ,
+        thouse.RentType ,
+        thouse.HouseType ,
+        thouse.Room ,
+        thouse.Hall ,
+        thouse.Toilet ,
+        thouse.Kitchen ,
+        thouse.Balcony ,
+        thouse.Bed ,
+        thouse.Square ,
+        thouse.PeopleNumber ,
+        thouse.Title ,
+        thouse.HouseRemark ,
+        thouse.HousePhoto ,
+        thouse.RentPrice ,
+        thouse.Contact ,
+        thouse.Mobile ,
+        thouse.Status ,
+        thouse.PayStatus ,
+        thouse.PayAmount ,
+        thouse.CreateTime ,
+        thouse.UpdateTime ,
+        audit.AuditState ,
+        audit.Auditor ,
+        audit.UpdateTime AuditTime ,
+        rentstate.RentDate ,
+		    rentstate.`status` RentStatus,
+        rentstate.UpdateTime RentLastUpdateTime ,
+        breach.RentBeforeDays ,
+        breach.DeductDays ,
+        collect.CreateTime CollectTime
+FROM    t_houseinfo thouse
+        INNER JOIN t_houseaudit audit ON thouse.HouseID = audit.HouseID
+        INNER JOIN t_houserentstate rentstate ON rentstate.HouseID = thouse.HouseID
+        INNER JOIN t_housebreach breach ON thouse.HouseID = breach.HouseID
+        INNER JOIN t_housecollect collect ON collect.HouseId = thouse.HouseID
+      ]]>
+    </select>
+    <!--搜索用户收藏夹-->
+    <select id="SelectFavoriteHouseByWhere" resultClass="FavoriteHouseInfo" parameterClass="FavoriteQuery"  extends="SelectAllFavoriteHouses">
+      <dynamic>
+        where collect.IsDel=#IsDel#
+        <isGreaterThan prepend="And" property="UserID" compareValue="0">
+          collect.UserID = #UserID#
+        </isGreaterThan>
+        <isNotNull property="OrderColumn">
+          Order by collect.$OrderColumn$ $SortType$
+        </isNotNull>
+        <isGreaterThan property="TakeNum" compareValue="0">
+          LIMIT #BeginNum#,#TakeNum#
+        </isGreaterThan>
+      </dynamic>
+    </select>
+    <!-- 用户收藏夹 end-->
+    
+    
+  </statements>
+</sqlMap>

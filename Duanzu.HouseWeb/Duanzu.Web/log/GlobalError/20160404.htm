@@ -1,0 +1,526 @@
+<HR COLOR=red>
+异常时间：2016-04-04 13:51:39,484 [8] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:无法连接到 net.tcp://127.0.0.1:9001/duzuhouseservice。连接尝试持续了 00:00:01.1647736 时间跨度。TCP 错误代码 10061: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:9001。<br/>
+Server stack trace: 
+   在 System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   在 System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddHouse(HouseInfo houseentity)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddHouse(HouseInfo houseentity)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://localhost:21557/<br/>请求参数: <br/>ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/2/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="2" *** INSTANCE_META_PATH="/LM/W3SVC/2" *** LOCAL_ADDR="::1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="::1" *** REMOTE_HOST="::1" *** REMOTE_PORT="26730" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="localhost" *** SERVER_PORT="21557" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CONNECTION="keep-alive" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="localhost:21557" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1><HR COLOR=red>
+异常时间：2016-04-04 13:52:56,534 [8] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:无法连接到 net.tcp://127.0.0.1:9998/duzuhouseservice。连接尝试持续了 00:00:01.0476983 时间跨度。TCP 错误代码 10061: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:9998。<br/>
+Server stack trace: 
+   在 System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   在 System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddHouse(HouseInfo houseentity)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddHouse(HouseInfo houseentity)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://localhost:21557/<br/>请求参数: <br/>ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/2/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="2" *** INSTANCE_META_PATH="/LM/W3SVC/2" *** LOCAL_ADDR="::1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="::1" *** REMOTE_HOST="::1" *** REMOTE_PORT="26730" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="localhost" *** SERVER_PORT="21557" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CACHE_CONTROL="max-age=0" *** HTTP_CONNECTION="keep-alive" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="localhost:21557" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1><HR COLOR=red>
+异常时间：2016-04-04 14:04:26,303 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:由于内部错误，服务器无法处理该请求。有关该错误的详细信息，请打开服务器上的 IncludeExceptionDetailInFaults (从 ServiceBehaviorAttribute 或从 <serviceDebug> 配置行为)以便将异常信息发送回客户端，或打开对每个 Microsoft .NET Framework SDK 文档的跟踪并检查服务器跟踪日志。<br/>
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddHouse(HouseInfo houseentity)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddHouse(HouseInfo houseentity)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 21
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://localhost:21557/<br/>请求参数: <br/>ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/2/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="2" *** INSTANCE_META_PATH="/LM/W3SVC/2" *** LOCAL_ADDR="::1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="::1" *** REMOTE_HOST="::1" *** REMOTE_PORT="26994" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="localhost" *** SERVER_PORT="21557" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CONNECTION="keep-alive" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="localhost:21557" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1><HR COLOR=red>
+异常时间：2016-04-04 15:01:23,927 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:方法 AddUserComment 在此代理中不受支持，如果未使用 OperationContractAttribute 标记方法或未使用 ServiceContractAttribute 标记接口类型，则会出现此情况。<br/>
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannelProxy.GetMethodData(IMethodCallMessage methodCall)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 30
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://localhost:21557/<br/>请求参数: <br/>ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/2/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="2" *** INSTANCE_META_PATH="/LM/W3SVC/2" *** LOCAL_ADDR="::1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="::1" *** REMOTE_HOST="::1" *** REMOTE_PORT="28622" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="localhost" *** SERVER_PORT="21557" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CONNECTION="keep-alive" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="localhost:21557" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1><HR COLOR=red>
+异常时间：2016-04-04 15:05:13,770 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:在流的位置 2 处读取消息组帧格式时出错(状态: Start)<br/>
+Server stack trace: 
+   在 System.ServiceModel.Channels.ClientDuplexConnectionReader.EnsureDecoderAtEof()
+   在 System.ServiceModel.Channels.SessionConnectionReader.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.SynchronizedMessageSource.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransportDuplexSessionChannel.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransportDuplexSessionChannel.TryReceive(TimeSpan timeout, Message& message)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 30
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://localhost:21557/<br/>请求参数: <br/>ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/2/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="2" *** INSTANCE_META_PATH="/LM/W3SVC/2" *** LOCAL_ADDR="::1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="::1" *** REMOTE_HOST="::1" *** REMOTE_PORT="28734" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="localhost" *** SERVER_PORT="21557" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CACHE_CONTROL="max-age=0" *** HTTP_CONNECTION="keep-alive" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="localhost:21557" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1><HR COLOR=red>
+异常时间：2016-04-04 15:07:01,439 [9] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:在流的位置 2 处读取消息组帧格式时出错(状态: Start)<br/>
+Server stack trace: 
+   在 System.ServiceModel.Channels.ClientDuplexConnectionReader.EnsureDecoderAtEof()
+   在 System.ServiceModel.Channels.SessionConnectionReader.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.SynchronizedMessageSource.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransportDuplexSessionChannel.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransportDuplexSessionChannel.TryReceive(TimeSpan timeout, Message& message)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 30
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://localhost:21557/<br/>请求参数: <br/>ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/2/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="2" *** INSTANCE_META_PATH="/LM/W3SVC/2" *** LOCAL_ADDR="::1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="::1" *** REMOTE_HOST="::1" *** REMOTE_PORT="28734" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="localhost" *** SERVER_PORT="21557" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CACHE_CONTROL="max-age=0" *** HTTP_CONNECTION="keep-alive" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="localhost:21557" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1><HR COLOR=red>
+异常时间：2016-04-04 15:09:04,213 [9] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:发送到 net.tcp://127.0.0.1:9998/duzuhouseservice 的请求操作在配置的超时(00:01:00)内未收到回复。分配给此操作的时间可能已经是更长超时的一部分。这可能由于服务仍在处理操作或服务无法发送回复消息。请考虑增加操作超时(将通道/代理转换为 IContextChannel 并设置 OperationTimeout 属性)并确保服务能够连接到客户端。<br/>
+Server stack trace: 
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 30
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://localhost:21557/<br/>请求参数: <br/>ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/2/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="2" *** INSTANCE_META_PATH="/LM/W3SVC/2" *** LOCAL_ADDR="::1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="::1" *** REMOTE_HOST="::1" *** REMOTE_PORT="28734" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="localhost" *** SERVER_PORT="21557" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CACHE_CONTROL="max-age=0" *** HTTP_CONNECTION="keep-alive" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="localhost:21557" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1><HR COLOR=red>
+异常时间：2016-04-04 15:11:36,894 [9] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:在流的位置 2 处读取消息组帧格式时出错(状态: Start)<br/>
+Server stack trace: 
+   在 System.ServiceModel.Channels.ClientDuplexConnectionReader.EnsureDecoderAtEof()
+   在 System.ServiceModel.Channels.SessionConnectionReader.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.SynchronizedMessageSource.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransportDuplexSessionChannel.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TransportDuplexSessionChannel.TryReceive(TimeSpan timeout, Message& message)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 30
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass8`1.<BeginSynchronous>b__7(IAsyncResult _)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://localhost:21557/<br/>请求参数: <br/>ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/2/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="2" *** INSTANCE_META_PATH="/LM/W3SVC/2" *** LOCAL_ADDR="::1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="::1" *** REMOTE_HOST="::1" *** REMOTE_PORT="28734" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="localhost" *** SERVER_PORT="21557" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CACHE_CONTROL="max-age=0" *** HTTP_CONNECTION="keep-alive" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="localhost:21557" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1><HR COLOR=red>
+异常时间：2016-04-04 17:04:56,733 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：globallogerror <BR>
+NDC: [(null)] <BR>
+异常是否处理:False<br/>异常信息:无法连接到 net.tcp://127.0.0.1:9001/duzuhouseservice。连接尝试持续了 00:00:01.0462293 时间跨度。TCP 错误代码 10061: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:9001。<br/>
+Server stack trace: 
+   在 System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   在 System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   在 System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+
+Exception rethrown at [1]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Duanzu.House.Contract.HouseInterface.IHouseServicersContract.AddUserComment(UserComment comment)
+   在 Duanzu.Controller.Controllers.HomeController.Index() 位置 d:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Controller\Controllers\HomeController.cs:行号 30
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)请求URL:http://www.duanzu.com/<br/>请求参数: <br/>ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" *** ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" *** APPL_MD_PATH="/LM/W3SVC/8/ROOT" *** APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" *** AUTH_TYPE="" *** AUTH_USER="" *** AUTH_PASSWORD="" *** LOGON_USER="" *** REMOTE_USER="" *** CERT_COOKIE="" *** CERT_FLAGS="" *** CERT_ISSUER="" *** CERT_KEYSIZE="" *** CERT_SECRETKEYSIZE="" *** CERT_SERIALNUMBER="" *** CERT_SERVER_ISSUER="" *** CERT_SERVER_SUBJECT="" *** CERT_SUBJECT="" *** CONTENT_LENGTH="0" *** CONTENT_TYPE="" *** GATEWAY_INTERFACE="CGI/1.1" *** HTTPS="off" *** HTTPS_KEYSIZE="" *** HTTPS_SECRETKEYSIZE="" *** HTTPS_SERVER_ISSUER="" *** HTTPS_SERVER_SUBJECT="" *** INSTANCE_ID="8" *** INSTANCE_META_PATH="/LM/W3SVC/8" *** LOCAL_ADDR="127.0.0.1" *** PATH_INFO="/" *** PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" *** QUERY_STRING="" *** REMOTE_ADDR="127.0.0.1" *** REMOTE_HOST="127.0.0.1" *** REMOTE_PORT="33547" *** REQUEST_METHOD="GET" *** SCRIPT_NAME="/" *** SERVER_NAME="www.duanzu.com" *** SERVER_PORT="80" *** SERVER_PORT_SECURE="0" *** SERVER_PROTOCOL="HTTP/1.1" *** SERVER_SOFTWARE="Microsoft-IIS/10.0" *** URL="/" *** HTTP_CACHE_CONTROL="no-cache" *** HTTP_CONNECTION="keep-alive" *** HTTP_PRAGMA="no-cache" *** HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" *** HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" *** HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" *** HTTP_HOST="www.duanzu.com" *** HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" *** HTTP_UPGRADE_INSECURE_REQUESTS="1" *** HTTP_DNT="1" ***  <BR>
+ <HR Size=1>

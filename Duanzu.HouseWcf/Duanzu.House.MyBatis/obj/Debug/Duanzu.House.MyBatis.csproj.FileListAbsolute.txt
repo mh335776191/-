@@ -1,0 +1,13 @@
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\Duanzu.House.MyBatis.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\Duanzu.House.MyBatis.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\Castle.DynamicProxy.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\Common.Logging.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\Common.Logging.Log4Net.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\IBatisNet.Common.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\IBatisNet.Common.Logging.Log4Net.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\IBatisNet.DataMapper.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\log4net.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\obj\Debug\Duanzu.House.MyBatis.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\obj\Debug\Duanzu.House.MyBatis.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\bin\Debug\mybatislog4Net.config
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.MyBatis\obj\Debug\Duanzu.House.MyBatis.csprojResolveAssemblyReference.cache

@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC49BF31-A2E9-4EA9-A421-66D51676CCD8}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Duanzu.Web</RootNamespace>
+    <AssemblyName>Duanzu.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Duanzu.Api">
+      <HintPath>..\Duanzu.Api\bin\Duanzu.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="TX.UrlRewriter, Version=2.0.0.9, Culture=neutral, PublicKeyToken=0573f3650687980d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\TX.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="TXImage">
+      <HintPath>..\..\..\..\..\PC\6.6\dll\TXImage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigClass\Attribute\GlobalErrorFiter.cs" />
+    <Compile Include="ConfigClass\HttpModule\LogsHttpModule.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\complete_validate.js" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\emotion.css" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\emotion.js" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\0.gif" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\bface.gif" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\cface.gif" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\fface.gif" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\tface.gif" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\wface.gif" />
+    <Content Include="Scripts\umeditor1.2\dialogs\emotion\images\yface.gif" />
+    <Content Include="Scripts\umeditor1.2\dialogs\formula\formula.css" />
+    <Content Include="Scripts\umeditor1.2\dialogs\formula\formula.html" />
+    <Content Include="Scripts\umeditor1.2\dialogs\formula\formula.js" />
+    <Content Include="Scripts\umeditor1.2\dialogs\formula\images\formula.png" />
+    <Content Include="Scripts\umeditor1.2\dialogs\image\image.css" />
+    <Content Include="Scripts\umeditor1.2\dialogs\image\image.js" />
+    <Content Include="Scripts\umeditor1.2\dialogs\image\images\close.png" />
+    <Content Include="Scripts\umeditor1.2\dialogs\image\images\upload1.png" />
+    <Content Include="Scripts\umeditor1.2\dialogs\image\images\upload2.png" />
+    <Content Include="Scripts\umeditor1.2\dialogs\link\link.js" />
+    <Content Include="Scripts\umeditor1.2\dialogs\map\map.html" />
+    <Content Include="Scripts\umeditor1.2\dialogs\map\map.js" />
+    <Content Include="Scripts\umeditor1.2\dialogs\video\images\center_focus.jpg" />
+    <Content Include="Scripts\umeditor1.2\dialogs\video\images\left_focus.jpg" />
+    <Content Include="Scripts\umeditor1.2\dialogs\video\images\none_focus.jpg" />
+    <Content Include="Scripts\umeditor1.2\dialogs\video\images\right_focus.jpg" />
+    <Content Include="Scripts\umeditor1.2\dialogs\video\video.css" />
+    <Content Include="Scripts\umeditor1.2\dialogs\video\video.js" />
+    <Content Include="Scripts\umeditor1.2\index.html" />
+    <Content Include="Scripts\umeditor1.2\lang\en\en.js" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\addimage.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\background.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\button.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\copy.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\deletedisable.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\deleteenable.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\imglabel.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\listbackground.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\localimage.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\music.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\rotateleftdisable.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\rotateleftenable.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\rotaterightdisable.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\rotaterightenable.png" />
+    <Content Include="Scripts\umeditor1.2\lang\en\images\upload.png" />
+    <Content Include="Scripts\umeditor1.2\lang\zh-cn\images\copy.png" />
+    <Content Include="Scripts\umeditor1.2\lang\zh-cn\images\imglabel.png" />
+    <Content Include="Scripts\umeditor1.2\lang\zh-cn\images\localimage.png" />
+    <Content Include="Scripts\umeditor1.2\lang\zh-cn\images\music.png" />
+    <Content Include="Scripts\umeditor1.2\lang\zh-cn\images\upload.png" />
+    <Content Include="Scripts\umeditor1.2\lang\zh-cn\zh-cn.js" />
+    <Content Include="Scripts\umeditor1.2\themes\default\css\umeditor.css" />
+    <Content Include="Scripts\umeditor1.2\themes\default\css\umeditor.min.css" />
+    <Content Include="Scripts\umeditor1.2\themes\default\images\caret.png" />
+    <Content Include="Scripts\umeditor1.2\themes\default\images\close.png" />
+    <Content Include="Scripts\umeditor1.2\themes\default\images\icons.gif" />
+    <Content Include="Scripts\umeditor1.2\themes\default\images\icons.png" />
+    <Content Include="Scripts\umeditor1.2\themes\default\images\ok.gif" />
+    <Content Include="Scripts\umeditor1.2\themes\default\images\pop-bg.png" />
+    <Content Include="Scripts\umeditor1.2\themes\default\images\spacer.gif" />
+    <Content Include="Scripts\umeditor1.2\themes\default\images\videologo.gif" />
+    <Content Include="Scripts\umeditor1.2\third-party\jquery.min.js" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\STIXFontLicense2010.txt" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneral-webfont.svg" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbol-webfont.svg" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbolita-webfont.svg" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralitalic-webfont.svg" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\Symbola.svg" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\mathquill.css" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\mathquill.js" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\mathquill.min.js" />
+    <Content Include="Scripts\umeditor1.2\umeditor.config.js" />
+    <Content Include="Scripts\umeditor1.2\umeditor.js" />
+    <Content Include="Scripts\umeditor1.2\umeditor.min.js" />
+    <Content Include="Scripts\uploadify\uploadify.swf" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\DuanzuFK\Views\Shared\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Duanzu-UserWcf\Duanzu.TXCommons\Duanzu.TXCommons.csproj">
+      <Project>{137563c9-b74c-4e4d-81d1-a33b744d96c1}</Project>
+      <Name>Duanzu.TXCommons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Duanzu.Controller\Duanzu.Controller.csproj">
+      <Project>{f999b2ae-6745-40b4-89aa-6a75d655b0a0}</Project>
+      <Name>Duanzu.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Duanzu.FD\Duanzu.FD.Controller.csproj">
+      <Project>{b0f4b398-700e-48ad-bca2-a682616a2e77}</Project>
+      <Name>Duanzu.FD.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Duanzu.FK\Duanzu.FK.Controller.csproj">
+      <Project>{f7d365dd-b0c9-4c17-9cab-672b9be628a4}</Project>
+      <Name>Duanzu.FK.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Log4netService\Log4netService.csproj">
+      <Project>{3dce8b26-9c9c-4a90-9d13-fff398beae37}</Project>
+      <Name>Log4netService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Top.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Footer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ShortRent\ShortRent.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ServiceAgreement\ShortRentRule.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ShortRent\PartialUploadPicture.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneral-webfont.eot" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneral-webfont.ttf" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneral-webfont.woff" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbol-webfont.eot" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbol-webfont.ttf" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbol-webfont.woff" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbolita-webfont.eot" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbolita-webfont.ttf" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbolita-webfont.woff" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralitalic-webfont.eot" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralitalic-webfont.ttf" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\stixgeneral-bundle\stixgeneralitalic-webfont.woff" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\Symbola.eot" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\Symbola.otf" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\Symbola.ttf" />
+    <Content Include="Scripts\umeditor1.2\third-party\mathquill\font\Symbola.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Tenant\MyCouponList.cshtml" />
+    <Content Include="Areas\DuanzuFK\Views\Tenant\PublicHead.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\Shared\DuanzuFD.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\LandLord\MyDuanzuHouseList.cshtml" />
+    <Content Include="Areas\DuanzuFD\Views\LandLord\PublicHead.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Tenant\MyCollectHouseList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Tenant\ShowCouponUsedInfo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\LandLord\DuanzuHouseOrderList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\LandLord\ShowComplaintInfo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\House\HouseDetail.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\url.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\LandLord\FDAuthentication.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\LandLord\ShowSuccessFDAuthentication.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Tenant\MyComplaintList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Tenant\ShowComplaintInfo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Tenant\EditComplaintInfo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFD\Views\LandLord\MyCommentList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Tenant\MyJourneyList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\DuanzuFK\Views\Tenant\ApplyComplaint.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>21557</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:21557/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

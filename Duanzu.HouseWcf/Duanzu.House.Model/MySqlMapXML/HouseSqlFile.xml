@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="House" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <!--短租房源基本信息实体-->
+    <typeAlias alias="T_HouseInfo" type="Duanzu.House.DataContract.HouseModel.DBModel.T_HouseInfo,Duanzu.House.DataContract" />
+    <!--短租房源出租状态实体-->
+    <typeAlias alias="T_HouseRentState" type="Duanzu.House.DataContract.HouseModel.DBModel.T_HouseRentState,Duanzu.House.DataContract" />
+    <!--短租房源特色实体-->
+    <typeAlias alias="T_HouseAroundInfo" type="Duanzu.House.DataContract.HouseModel.DBModel.T_HouseAroundInfo,Duanzu.House.DataContract" />
+    <!--短租房源审核实体-->
+    <typeAlias alias="T_HouseAudit" type="Duanzu.House.DataContract.HouseModel.DBModel.T_HouseAudit,Duanzu.House.DataContract" />
+    <!--房屋违约配制-->
+    <typeAlias alias="T_HouseBreach" type="Duanzu.House.DataContract.HouseModel.DBModel.T_HouseBreach,Duanzu.House.DataContract" />
+    <!--返回房源基本信息-->
+    <typeAlias alias="BaseHouseInfo" type="Duanzu.House.DataContract.HouseModel.BusinessModel.BaseHouseInfo,Duanzu.House.DataContract" />
+
+    <!--短租房源查询实体-->
+    <typeAlias alias="HouseQuery" type="Duanzu.House.DataContract.QueryModel.HouseQuery,Duanzu.House.DataContract" />
+
+  </alias>
+  <resultMaps>
+    <!--短租房源信息 class:对应的类型，与别名一致-->
+    <resultMap id="HouseInfoResult" class="T_HouseInfo">
+      <result property="HouseID" column="HouseID" dbType="int" type="int" />
+      <result property="UserID" column="UserID" dbType="int" type="int" />
+      <result property="ProvinceID" column="ProvinceID" dbType="int" type="int" />
+      <result property="CityID" column="CityID" dbType="int" type="int" />
+      <result property="Lat" column="Lat" dbType="decimal" type="decimal" />
+      <result property="Lng" column="Lng" dbType="decimal" type="decimal" />
+      <result property="AreaID" column="AreaID" dbType="int" type="int" />
+      <result property="BusinessID" column="BusinessID" dbType="int" type="int" />
+      <result property="Address" column="Address" dbType="varchar" type="string" />
+      <result property="RentType" column="RentType" dbType="tinyint" type="byte" />
+      <result property="HouseType" column="HouseType" dbType="tinyint" type="byte" />
+      <result property="Room" column="Room" dbType="tinyint" type="byte" />
+      <result property="Hall" column="Hall" dbType="tinyint" type="byte" />
+      <result property="Toilet" column="Toilet" dbType="tinyint" type="byte" />
+      <result property="Kitchen" column="Kitchen" dbType="tinyint" type="byte" />
+      <result property="Balcony" column="Balcony" dbType="tinyint" type="byte" />
+      <result property="Bed" column="Bed" dbType="tinyint" type="byte" />
+      <result property="Square" column="Square" dbType="int" type="int" />
+      <result property="PeopleNumber" column="PeopleNumber" dbType="tinyint" type="byte" />
+      <result property="Title" column="Title" dbType="varchar" type="string" />
+      <result property="HouseRemark" column="HouseRemark" dbType="varchar" type="string"/>
+      <result property="HousePhoto" column="HousePhoto" dbType="varchar" type="string" />
+      <result property="RentPrice" column="RentPrice" dbType="int" type="int" />
+      <result property="Contact" column="Contact" dbType="varchar" type="string" />
+      <result property="Mobile" column="Mobile" dbType="varchar" type="string" />
+      <result property="Status" column="Status" dbType="tinyint" type="byte" />
+      <result property="PayStatus" column="PayStatus" dbType="tinyint" type="byte" />
+      <result property="PayAmount" column="PayAmount" dbType="decimal" type="decimal" />
+      <result property="CreateTime" column="CreateTime" dbType="DATE" type="DateTime" />
+      <result property="UpdateTime" column="UpdateTime" dbType="DATE" type="DateTime" />
+    </resultMap>
+    <!--房源出租状态-->
+    <resultMap id="HouseRentStateResult" class="T_HouseRentState">
+      <result property="Id" column="id" dbType="int" type="int" />
+      <result property="HouseID" column="HouseID" dbType="int" type="int" />
+      <result property="RentDate" column="RentDate" dbType="DATE" type="DateTime" />
+      <result property="RentStatus" column="status" dbType="tinyint" type="byte" />
+      <result property="CreateTime" column="CreateTime" dbType="DATE" type="DateTime" />
+      <result property="UpdateTime" column="UpdateTime" dbType="DATE" type="DateTime" />
+    </resultMap>
+    <!--短租房源特色-->
+    <resultMap id="HouseAroundInfoResult" class="T_HouseAroundInfo">
+      <result property="Id" column="id" dbType="int" type="int" />
+      <result property="HouseID" column="HouseID" dbType="int" type="int" />
+      <result property="DictID" column="DictID" dbType="int" type="int" />
+      <result property="Type" column="Type" dbType="tinyint" type="byte" />
+      <result property="CreateTime" column="CreateTime" dbType="DATE" type="DateTime" />
+      <result property="UpdateTime" column="UpdateTime" dbType="DATE" type="DateTime" />
+    </resultMap>
+    <!--短租审核信息-->
+    <resultMap id="HouseAuditResult" class="T_HouseAudit">
+      <result property="Id" column="id" dbType="int" type="int" />
+      <result property="HouseID" column="HouseID" dbType="int" type="int" />
+      <result property="AuditState" column="AuditState" dbType="DATE" type="DateTime" />
+      <result property="AuditorID" column="AuditorID" dbType="tinyint" type="byte" />
+      <result property="Auditor" column="Auditor" dbType="varchar" type="string" />
+      <result property="CreateTime" column="CreateTime" dbType="DATE" type="DateTime" />
+      <result property="UpdateTime" column="UpdateTime" dbType="DATE" type="DateTime" />
+    </resultMap>
+    <!--房屋违约配制-->
+    <resultMap id="HouseBreachResult" class="T_HouseBreach">
+      <result property="Id" column="id" dbType="int" type="int" />
+      <result property="HouseID" column="HouseID" dbType="int" type="int" />
+      <result property="RentBeforeDays" column="RentBeforeDays" dbType="tinyint" type="byte" />
+      <result property="DeductDays" column="DeductDays" dbType="tinyint" type="byte" />
+      <result property="CreateTime" column="CreateTime" dbType="DATE" type="DateTime" />
+      <result property="UpdateTime" column="UpdateTime" dbType="DATE" type="DateTime" />
+    </resultMap>
+  </resultMaps>
+  <statements>
+    <!--resultMap="HouseInfoResult"-->
+    <select id="SelectAllHouses" resultClass="BaseHouseInfo">
+      <![CDATA[  
+SELECT  thouse.HouseID ,
+        thouse.UserID ,
+        thouse.ProvinceID ,
+        thouse.CityID ,
+        thouse.Lat ,
+        thouse.Lng ,
+        thouse.AreaID ,
+        thouse.BusinessID ,
+        thouse.Address ,
+        thouse.RentType ,
+        thouse.HouseType ,
+        thouse.Room ,
+        thouse.Hall ,
+        thouse.Toilet ,
+        thouse.Kitchen ,
+        thouse.Balcony ,
+        thouse.Bed ,
+        thouse.Square ,
+        thouse.PeopleNumber ,
+        thouse.Title ,
+        thouse.HouseRemark ,
+        thouse.HousePhoto ,
+        thouse.RentPrice ,
+        thouse.Contact ,
+        thouse.Mobile ,
+        thouse.Status ,
+        thouse.PayStatus ,
+        thouse.PayAmount ,
+        thouse.CreateTime ,
+        thouse.UpdateTime ,
+        audit.AuditState ,
+        audit.Auditor ,
+        audit.UpdateTime AuditTime ,
+        rentstate.RentDate ,
+        rentstate.`status` RentStatus ,
+        rentstate.UpdateTime RentLastUpdateTime ,
+        breach.RentBeforeDays ,
+        breach.DeductDays
+FROM    t_houseinfo thouse
+        INNER JOIN t_houseaudit audit ON thouse.HouseID = audit.HouseID
+        INNER JOIN t_houserentstate rentstate ON rentstate.HouseID = thouse.HouseID
+        INNER JOIN t_housebreach breach ON thouse.HouseID = breach.HouseID
+
+      ]]>
+    </select>
+    <!--<select id="SelectHouseById" parameterClass="int" resultMap="HouseInfoResult" extends="SelectAllHouses">
+      <![CDATA[    FROM t_houseinfo thouse 
+      where HouseID = #value#  
+      ]]>
+    </select>-->
+    <!--extends 继承-->
+    <select id="SelectHouseById" parameterClass="int" resultClass="BaseHouseInfo" extends="SelectAllHouses">
+      <![CDATA[      
+      where thouse.HouseID = #value#  
+      ]]>
+    </select>
+    <select id ="SelectHouseByWhere" parameterClass="HouseQuery" resultClass="BaseHouseInfo"  extends="SelectAllHouses">
+      <![CDATA[    
+      ]]>
+      <dynamic prepend="where">
+        1=1
+        <!--
+          一元条件
+          isPropertyAvailable:是否存在该属性
+          isNotPropertyAvailable：是否不存在该属性
+          isNull：属性是否为null
+          isNotNull：属性是否不为null
+          isEmpty：是否为空
+          isNotEmpty：是否不为空
+          <isNotEmpty predend="AND" property="firstName">
+            First_Name = #firstName#
+          </isNotEmpty>
+          二元条件
+          isEqual:是否相等
+          isNotEqual:是否不相等
+          isGreaterThan：是否大于
+          isGreaterEqual：是否大于等于
+          isLessThan：是否小于
+          isLessEqual：是否小于等于
+          <isLessEqual prepend="AND" property="age" compareValue="18">
+            Age = #Age#
+          </isLessEqual>
+        -->
+        <isGreaterThan prepend="And" property="RentType" compareValue="0">
+          thouse.RentType = #RentType#
+        </isGreaterThan>
+        <isGreaterThan prepend="And" property="HouseType" compareValue="0">
+          thouse.HouseType = #HouseType#
+        </isGreaterThan>
+        <isGreaterThan prepend="And" property="UserID" compareValue="0">
+          thouse.UserID = #UserID#
+        </isGreaterThan>
+        <isGreaterThan prepend="And" property="HouseID" compareValue="0">
+          thouse.HouseID = #HouseID#
+        </isGreaterThan>
+
+        <isNotNull property="OrderColumn">
+          Order by thouse.$OrderColumn$ $SortType$
+        </isNotNull>
+        <isGreaterThan property="TakeNum" compareValue="0">
+          LIMIT #BeginNum#,#TakeNum#
+        </isGreaterThan>
+      </dynamic>
+      <!--<if test="HouseID !=0 ">
+        AND HouseID = #HouseID#
+      </if>
+      <if test="UserID !=0 ">
+        AND UserID = #UserID#
+      </if>-->
+    </select>
+
+    <!--短租房源插入begin-->
+
+    <!--房源基本信息-->
+    <insert id="AddHouse" parameterClass="T_HouseInfo" >
+      <selectKey property="HouseID" type="post" resultClass="int">
+        select @@IDENTITY as value;
+      </selectKey>
+      <![CDATA[  
+      insert into T_HouseInfo  
+      (UserID,ProvinceID,CityID,Lat,Lng,AreaID,BusinessID,Address,RentType,HouseType,Room,Hall,Toilet,Kitchen,Balcony,Bed
+,Square,PeopleNumber,Title,HouseRemark,HousePhoto,RentPrice,Contact,Mobile,Status,PayStatus,PayAmount,CreateTime,UpdateTime)  
+      values  
+      (#UserID#,#ProvinceID#,#CityID#,#Lat#,#Lng#,#AreaID#,#BusinessID#,#Address#,#RentType#,#HouseType#,#Room#,#Hall#,#Toilet#,#Kitchen#,#Balcony#,#Bed#
+,#Square#,#PeopleNumber#,#Title#,#HouseRemark#,#HousePhoto#,#RentPrice#,#Contact#,#Mobile#,#Status#,#PayStatus#,#PayAmount#,Now(),Now())  
+      ]]>
+    </insert>
+    <!--出租状态-->
+    <insert id="AddHouseRent" parameterClass="T_HouseRentState">
+      <selectKey property="Id" type="post" resultClass="int">
+        select @@IDENTITY as value;
+      </selectKey>
+      <![CDATA[  
+      INSERT  INTO t_houserentstate
+        ( HouseID ,
+          RentDate ,
+          status ,
+          CreateTime ,
+          UpdateTime
+        )
+VALUES  ( #HouseID# ,
+          #RentDate# ,
+          #RentStatus# ,
+          NOW() ,
+          NOW()
+        )
+ ]]>
+    </insert>
+    <!--房源特色-->
+    <insert id="AddHouseAroundInfo" parameterClass="T_HouseAroundInfo">
+      <selectKey property="Id" type="post" resultClass="int">
+        select @@IDENTITY as value;
+      </selectKey>
+      <![CDATA[  
+     INSERT  INTO t_housearoundinfo
+        ( HouseID ,
+          DictID ,
+          Type ,
+          CreateTime ,
+          UpdateTime
+        )
+VALUES  ( #HouseID# ,
+          #DictID# ,
+          #Type# ,
+          Now() ,
+          now()
+        )
+ ]]>
+    </insert>
+    <!--房源审核信息-->
+    <insert id="AddHouseAudit" parameterClass="T_HouseAudit">
+      <selectKey property="Id" type="post" resultClass="int">
+        select @@IDENTITY as value;
+      </selectKey>
+      <![CDATA[  
+   INSERT  INTO t_houseaudit
+        ( HouseID ,
+          AuditState ,
+          AuditorID ,
+          Auditor ,
+          CreateTime ,
+          UpdateTime
+        )
+VALUES  ( #HouseID# ,
+          #AuditState# ,
+          #AuditorID#,
+          #Auditor# ,
+          NOW() ,
+          NOW()
+        )
+ ]]>
+    </insert>
+    <!--房屋违约配制-->
+    <insert id="AddHouseBreach" parameterClass="T_HouseBreach">
+      <selectKey property="Id" type="post" resultClass="int">
+        select @@IDENTITY as value;
+      </selectKey>
+      <![CDATA[  
+   INSERT  INTO t_housebreach
+        ( HouseID ,
+          RentBeforeDays ,
+          DeductDays ,
+          CreateTime ,
+          UpdateTime
+        )
+VALUES  ( #HouseID# ,
+          #RentBeforeDays# ,
+          #DeductDays# ,
+          NOW() ,
+          NOW()
+        )
+ ]]>
+    </insert>
+
+    <!--短租房源插入end-->
+
+    <!--短租更新 begin-->
+    <!--更新房源-->
+    <update id="UpdateHouseInfo"  parameterClass="T_HouseInfo" >
+      <![CDATA[
+     UPDATE T_HouseInfo set 
+                          ProvinceID=#ProvinceID#,
+                          CityID=#CityID#,
+                          Lat=#Lat#,
+                          Lng=#Lng#,
+                          AreaID=#AreaID#,
+                          BusinessID=#BusinessID#,
+                          Address=#Address#,
+                          RentType=#RentType#,
+                          HouseType=#HouseType#,
+                          Room=#Room#,
+                          Hall=#Hall#,
+                          Toilet=#Toilet#,
+                          Kitchen=#Kitchen#,
+                          Balcony=#Balcony#,
+                          Bed=#Bed#,
+                          Square=#Square#,
+                          PeopleNumber=#PeopleNumber#,
+                          Title=#Title#,
+                          HouseRemark=#HouseRemark#,
+                          RentPrice=#RentPrice#,
+                          Contact=#Contact#,
+                          Mobile=#Mobile#,
+                          `Status`=#Status#,
+                          PayStatus=#PayStatus#,
+                          PayAmount=#PayAmount#,
+                          UpdateTime=NOW()
+                          WHERE HouseID=#HouseID# and UserID=#UserID#
+
+     ]]>
+    </update>
+    <!--更新出租状态-->
+    <update id="UpdateHouseRent"  parameterClass="T_HouseRentState" >
+      <![CDATA[       
+        update t_houserentstate SET
+        RentDate=#RentDate#,
+        `status`=#RentStatus#,
+        UpdateTime=NOW()
+        WHERE HouseID=#HouseID#
+      ]]>
+    </update>
+    <!--更新违约配制-->
+    <update id="UpdateHouseBreach" parameterClass="T_HouseBreach">
+      <![CDATA[              
+            update t_housebreach SET
+            RentBeforeDays=#RentBeforeDays#,
+            DeductDays=#DeductDays#,
+            UpdateTime=NOW()
+            WHERE HouseID=#HouseID#
+      ]]>
+    </update>
+    <!--删除房源特色，先删除，后插入-->
+    <delete id="DeleteHouseAroundInfo" parameterClass="int">
+      <![CDATA[DELETE from t_housearoundinfo where houseid=#houseid#]]>
+    </delete>
+    <!--短租更新 end-->
+  </statements>
+</sqlMap>

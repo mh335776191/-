@@ -1,0 +1,31 @@
+﻿@{
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+    string kyjBase = Duanzu.TXCommons.BasicsClass.PubConstant.KyjBaseUrl;
+}
+<div class="tit w1200 clearfix">
+    <div class="pers fl">
+        <a href="javascript:void(0);">
+            <img src="@(staticUrl)web/agent/Resource/images/short/usercenter/pers_bg.png@(version)">
+        </a>
+    </div>
+    <div class="info fl">
+        <p>
+            <span class="tt">账&nbsp;户：</span>
+            <span class="tel colfb3232">18600693251</span>
+            <a class="col3e88db grzl" href="@(kyjBase)Landlord/MyInfo?fk=1">修改个人资料</a>
+            <a class="col3e88db grmm" href="@(kyjBase)Landlord/ChangePassword?fd=2">修改个人密码</a>
+        </p>
+        <p>
+            <span class="tt">账户余额：</span>
+            <span class="colfb3232">(&nbsp;0.00&nbsp;)</span>
+            <a class="col3e88db" href="@(kyjBase)Landlord/Recharge?fd=2">充值</a>
+            <a class="col3e88db" href="@(kyjBase)Landlord/Deposit?fd=2">提现</a>
+            <a class="col3e88db" href="@(kyjBase)Landlord/AccountWater?fd=2">流水</a>
+        </p>
+    </div>
+    <a href="javascript:;" class="mess fl">
+        <img src="@(staticUrl)web/agent/Resource/images/short/usercenter/mess_bg.png@(version)" alt="">
+        我的消息 <em class="colfb3232">(3) </em>条
+    </a>
+</div>

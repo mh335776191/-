@@ -1,0 +1,5219 @@
+
+日志时间：2016-04-04 13:51:01,969 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="26730" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 13:51:39,792 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 13:51:40,839 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/favicon.ico
+请求参数:
+ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_REFERER:http://localhost:21557/
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_DNT:1
+" 
+ ALL_RAW="Connection: keep-alive
+Accept: */*
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+Referer: http://localhost:21557/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/favicon.ico" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\favicon.ico" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="26730" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/favicon.ico" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/favicon.ico" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="*/*" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_REFERER="http://localhost:21557/" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 13:51:40,960 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 13:51:46,012 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="26730" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 13:52:56,558 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 13:52:58,147 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="26730" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 13:58:23,616 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="26828" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 14:03:59,811 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="26994" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 14:04:26,452 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 15:01:09,007 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="28622" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:01:24,021 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 15:03:04,440 [4] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="28622" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:03:56,978 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="28734" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:04:18,222 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 15:04:19,707 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="28734" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:05:13,804 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 15:05:58,159 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="28734" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:07:01,463 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 15:07:03,164 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="28734" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:09:04,237 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 15:09:05,729 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="28734" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:11:36,922 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 15:11:38,297 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="28734" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:11:46,638 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 15:33:13,347 [36] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="29525" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 15:33:22,913 [36] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 16:00:57,886 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/
+请求参数:
+ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="30543" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:01:03,755 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 16:01:04,116 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:::1 ::1
+请求URL:http://localhost:21557/duanzu.api.com/product
+请求参数:
+value="11111" 
+ ALL_HTTP="HTTP_CONNECTION:keep-alive
+HTTP_CONTENT_LENGTH:11
+HTTP_CONTENT_TYPE:application/x-www-form-urlencoded; charset=UTF-8
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:21557
+HTTP_REFERER:http://localhost:21557/
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_ORIGIN:http://localhost:21557
+HTTP_X_REQUESTED_WITH:XMLHttpRequest
+HTTP_DNT:1
+" 
+ ALL_RAW="Connection: keep-alive
+Content-Length: 11
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: localhost:21557
+Referer: http://localhost:21557/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Origin: http://localhost:21557
+X-Requested-With: XMLHttpRequest
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/2/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="11" 
+ CONTENT_TYPE="application/x-www-form-urlencoded; charset=UTF-8" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="2" 
+ INSTANCE_META_PATH="/LM/W3SVC/2" 
+ LOCAL_ADDR="::1" 
+ PATH_INFO="/duanzu.api.com/product" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\duanzu.api.com\product" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="::1" 
+ REMOTE_HOST="::1" 
+ REMOTE_PORT="30543" 
+ REQUEST_METHOD="POST" 
+ SCRIPT_NAME="/duanzu.api.com/product" 
+ SERVER_NAME="localhost" 
+ SERVER_PORT="21557" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/duanzu.api.com/product" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_CONTENT_LENGTH="11" 
+ HTTP_CONTENT_TYPE="application/x-www-form-urlencoded; charset=UTF-8" 
+ HTTP_ACCEPT="*/*" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="localhost:21557" 
+ HTTP_REFERER="http://localhost:21557/" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_ORIGIN="http://localhost:21557" 
+ HTTP_X_REQUESTED_WITH="XMLHttpRequest" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:01:04,170 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:::1 ::1
+ 
+
+日志时间：2016-04-04 16:10:48,582 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_DNT:1
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_X_LANTERN_AUTH_TOKEN:02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1
+HTTP_X_LANTERN_DEVICE_ID:pB9yVciq
+" 
+ ALL_RAW="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Dnt: 1
+Upgrade-Insecure-Requests: 1
+X-Lantern-Auth-Token: 02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1
+X-Lantern-Device-Id: pB9yVciq
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="31330" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_DNT="1" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_X_LANTERN_AUTH_TOKEN="02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1" 
+ HTTP_X_LANTERN_DEVICE_ID="pB9yVciq" 
+  
+
+日志时间：2016-04-04 16:10:48,582 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/favicon.ico
+请求参数:
+ALL_HTTP="HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_REFERER:http://www.duanzu.com/
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_DNT:1
+HTTP_X_LANTERN_AUTH_TOKEN:02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1
+HTTP_X_LANTERN_DEVICE_ID:pB9yVciq
+" 
+ ALL_RAW="Accept: */*
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+Referer: http://www.duanzu.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Dnt: 1
+X-Lantern-Auth-Token: 02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1
+X-Lantern-Device-Id: pB9yVciq
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/favicon.ico" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\favicon.ico" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="31334" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/favicon.ico" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/favicon.ico" 
+ HTTP_ACCEPT="*/*" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_REFERER="http://www.duanzu.com/" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_DNT="1" 
+ HTTP_X_LANTERN_AUTH_TOKEN="02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1" 
+ HTTP_X_LANTERN_DEVICE_ID="pB9yVciq" 
+  
+
+日志时间：2016-04-04 16:10:48,583 [11] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_DNT:1
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_X_LANTERN_AUTH_TOKEN:02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1
+HTTP_X_LANTERN_DEVICE_ID:pB9yVciq
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Dnt: 1
+Upgrade-Insecure-Requests: 1
+X-Lantern-Auth-Token: 02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1
+X-Lantern-Device-Id: pB9yVciq
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="31342" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_DNT="1" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_X_LANTERN_AUTH_TOKEN="02xxiJ7O6hQKXAhk7QSSeVa3SRlgJiQxsegTIRAAgM9uDYvKnkDqPKAia2wHGyW1" 
+ HTTP_X_LANTERN_DEVICE_ID="pB9yVciq" 
+  
+
+日志时间：2016-04-04 16:10:48,582 [13] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="31358" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:10:48,582 [12] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="31343" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:10:48,950 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:10:51,858 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:10:51,858 [11] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:10:51,859 [13] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:10:51,859 [12] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:10:52,199 [14] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/duanzu.api.com/product
+请求参数:
+value="11111" 
+ ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_CONTENT_LENGTH:11
+HTTP_CONTENT_TYPE:application/x-www-form-urlencoded; charset=UTF-8
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_REFERER:http://www.duanzu.com/
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_ORIGIN:http://www.duanzu.com
+HTTP_X_REQUESTED_WITH:XMLHttpRequest
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Content-Length: 11
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+Referer: http://www.duanzu.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Origin: http://www.duanzu.com
+X-Requested-With: XMLHttpRequest
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="11" 
+ CONTENT_TYPE="application/x-www-form-urlencoded; charset=UTF-8" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/duanzu.api.com/product" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\duanzu.api.com\product" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="31358" 
+ REQUEST_METHOD="POST" 
+ SCRIPT_NAME="/duanzu.api.com/product" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/duanzu.api.com/product" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_CONTENT_LENGTH="11" 
+ HTTP_CONTENT_TYPE="application/x-www-form-urlencoded; charset=UTF-8" 
+ HTTP_ACCEPT="*/*" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_REFERER="http://www.duanzu.com/" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_ORIGIN="http://www.duanzu.com" 
+ HTTP_X_REQUESTED_WITH="XMLHttpRequest" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:10:52,200 [14] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:10:52,554 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/favicon.ico
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_REFERER:http://www.duanzu.com/
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: */*
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+Referer: http://www.duanzu.com/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/favicon.ico" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\favicon.ico" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="31358" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/favicon.ico" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/favicon.ico" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="*/*" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_REFERER="http://www.duanzu.com/" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:10:52,557 [9] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:11:08,126 [16] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="31358" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:11:08,941 [16] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:30:13,892 [17] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="32153" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:30:15,340 [17] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:35:15,278 [28] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="32466" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:35:15,571 [28] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 16:35:41,114 [28] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="32466" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 16:35:41,959 [28] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:04:55,019 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="33547" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:04:56,823 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:06:10,034 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="33547" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:06:12,708 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:06:24,718 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="33547" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:06:24,785 [10] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:07:51,827 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="33547" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:07:51,881 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:09:00,442 [13] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="33547" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:09:00,509 [13] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:12:16,000 [17] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="33844" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:12:16,874 [17] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:16:12,124 [23] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34054" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:16:12,662 [23] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:22:36,255 [18] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34143" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:22:37,403 [18] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:23:08,815 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34143" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:23:09,278 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:23:42,150 [26] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34143" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:23:42,628 [26] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:32:34,340 [16] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34404" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:32:37,015 [16] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:34:52,551 [16] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34559" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:34:52,597 [16] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:34:59,893 [18] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34559" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:34:59,938 [18] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:35:21,781 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34559" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:35:21,836 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:35:50,334 [16] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34559" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:35:50,380 [16] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:37:31,246 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34559" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:37:31,308 [8] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:37:34,139 [30] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34559" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:37:34,191 [30] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:39:15,692 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34559" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:39:15,743 [5] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:42:00,779 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="34881" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:42:00,857 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:46:58,397 [30] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:46:59,217 [30] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:48:26,906 [30] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: max-age=0
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="max-age=0" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:48:27,394 [30] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:48:35,817 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:48:35,863 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:49:37,941 [39] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:49:38,432 [39] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:50:00,867 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:50:00,908 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:50:08,407 [35] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:50:08,445 [35] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:50:38,336 [35] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:50:38,827 [35] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:50:43,063 [36] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:50:43,105 [36] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:50:55,788 [30] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35155" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:50:56,248 [30] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:59:17,865 [44] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35680" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:59:17,946 [44] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 17:59:38,168 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35680" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 17:59:38,614 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 18:00:47,839 [46] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35680" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 18:00:47,885 [46] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 18:01:07,636 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35680" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 18:01:08,097 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 
+
+日志时间：2016-04-04 18:04:46,702 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+开始请求 IP:127.0.0.1 127.0.0.1
+请求URL:http://www.duanzu.com/
+请求参数:
+ALL_HTTP="HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate, sdch
+HTTP_ACCEPT_LANGUAGE:zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:www.duanzu.com
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+HTTP_UPGRADE_INSECURE_REQUESTS:1
+HTTP_DNT:1
+" 
+ ALL_RAW="Cache-Control: no-cache
+Connection: keep-alive
+Pragma: no-cache
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4
+Host: www.duanzu.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+Upgrade-Insecure-Requests: 1
+DNT: 1
+" 
+ APPL_MD_PATH="/LM/W3SVC/8/ROOT" 
+ APPL_PHYSICAL_PATH="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web\" 
+ AUTH_TYPE="" 
+ AUTH_USER="" 
+ AUTH_PASSWORD="" 
+ LOGON_USER="" 
+ REMOTE_USER="" 
+ CERT_COOKIE="" 
+ CERT_FLAGS="" 
+ CERT_ISSUER="" 
+ CERT_KEYSIZE="" 
+ CERT_SECRETKEYSIZE="" 
+ CERT_SERIALNUMBER="" 
+ CERT_SERVER_ISSUER="" 
+ CERT_SERVER_SUBJECT="" 
+ CERT_SUBJECT="" 
+ CONTENT_LENGTH="0" 
+ CONTENT_TYPE="" 
+ GATEWAY_INTERFACE="CGI/1.1" 
+ HTTPS="off" 
+ HTTPS_KEYSIZE="" 
+ HTTPS_SECRETKEYSIZE="" 
+ HTTPS_SERVER_ISSUER="" 
+ HTTPS_SERVER_SUBJECT="" 
+ INSTANCE_ID="8" 
+ INSTANCE_META_PATH="/LM/W3SVC/8" 
+ LOCAL_ADDR="127.0.0.1" 
+ PATH_INFO="/" 
+ PATH_TRANSLATED="D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.Web" 
+ QUERY_STRING="" 
+ REMOTE_ADDR="127.0.0.1" 
+ REMOTE_HOST="127.0.0.1" 
+ REMOTE_PORT="35868" 
+ REQUEST_METHOD="GET" 
+ SCRIPT_NAME="/" 
+ SERVER_NAME="www.duanzu.com" 
+ SERVER_PORT="80" 
+ SERVER_PORT_SECURE="0" 
+ SERVER_PROTOCOL="HTTP/1.1" 
+ SERVER_SOFTWARE="Microsoft-IIS/10.0" 
+ URL="/" 
+ HTTP_CACHE_CONTROL="no-cache" 
+ HTTP_CONNECTION="keep-alive" 
+ HTTP_PRAGMA="no-cache" 
+ HTTP_ACCEPT="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" 
+ HTTP_ACCEPT_ENCODING="gzip, deflate, sdch" 
+ HTTP_ACCEPT_LANGUAGE="zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4" 
+ HTTP_HOST="www.duanzu.com" 
+ HTTP_USER_AGENT="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 
+ HTTP_UPGRADE_INSECURE_REQUESTS="1" 
+ HTTP_DNT="1" 
+  
+
+日志时间：2016-04-04 18:04:46,744 [32] 
+日志级别：INFO  
+日 志 类：websitlogs [(null)] 
+结束请求 IP:127.0.0.1 127.0.0.1
+ 

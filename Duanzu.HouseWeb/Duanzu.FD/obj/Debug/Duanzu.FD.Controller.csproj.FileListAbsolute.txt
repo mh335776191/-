@@ -1,0 +1,15 @@
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.FD.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.FD.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\obj\Debug\Duanzu.FD.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\obj\Debug\Duanzu.FD.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\obj\Debug\Duanzu.FD.Controller.csprojResolveAssemblyReference.cache
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.Controller.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.TXCommons.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.House.DataContract.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.House.Contract.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.Controller.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.House.Contract.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.User.DataContract.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.User.DataContract.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.House.DataContract.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Duanzu.FD\bin\Debug\Duanzu.TXCommons.pdb

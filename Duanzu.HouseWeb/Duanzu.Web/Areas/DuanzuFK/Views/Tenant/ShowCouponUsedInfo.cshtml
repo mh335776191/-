@@ -1,0 +1,137 @@
+﻿@{
+    Layout = null;
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+    var couponModel = ViewBag.couponModel;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>现金租房券详情页</title>
+    <script type="text/javascript" src="@(staticUrl)web/base/js/jquery-1.6.4.min.js"></script>
+    <link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/kyj_ui.css@(version)">
+    <link href="@(staticUrl)web/agent/Resource/css/bomb.css@(version)" rel="stylesheet" type="text/css" />
+    <link href="@(staticUrl)web/base/js/plugs/freeui/skins/lightgray/css/dialog.css@(version)" rel="stylesheet" type="text/css" />
+    <script src="@(staticUrl)web/base/js/plugs/freeui/js/freedialog.min.js@(version)" type="text/javascript"></script>
+</head>
+<body>
+    <div class="layer_box sjd_layerBox">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+
+                <tr>
+                    <td class="tdRight" width="22%">
+                        状态：
+                    </td>
+                    <td class="tdLeft">
+                        @(couponModel.UseState==2?"已使用":"未使用")
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdRight">
+                        面额：
+                    </td>
+                    <td class="tdLeft">
+                        <strong class="colf60">@(Convert.ToDouble(couponModel.Price))</strong>元
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdRight" valign="top">
+                        来源：
+                    </td>
+                    <td class="tdLeft">
+                        购买短租会员
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdRight" valign="top">
+                        获得日期：
+                    </td>
+                    <td class="tdLeft">
+                        @(Convert.ToDateTime(couponModel.CreateTime).ToString("yyyy.MM.dd"))
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdRight" valign="top">
+                        到期时间：
+                    </td>
+                    <td class="tdLeft">
+                        永不过期
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdRight" valign="top">
+                        使用方法：
+                    </td>
+                    <td class="tdLeft">
+                        预定短租房 — 支付房租 — 选择租房券 — 确认支付 — 完成
+                    </td>
+                </tr>
+
+
+                @{
+                    if (couponModel.UseState == 2)
+                    { 
+                    <tr>
+                        <td class="tdRight" valign="top">
+                            <span style="font-size:18px;" class="fbold">使用信息：</span>
+                        </td>
+                        <td class="tdLeft"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" valign="top">
+                            申请使用时间：
+                        </td>
+                        <td class="tdLeft">
+                            @(Convert.ToDateTime(couponModel.starttime).ToString("yyyy.MM.dd"))
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" valign="top">
+                            <span class="colf60">*</span>房 东 姓 名：
+                        </td>
+                        <td class="tdLeft">
+                            @(couponModel.UserName)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" valign="top">
+                            <span class="colf60">*</span>房 东 电 话：
+                        </td>
+                        <td class="tdLeft">
+                            @(couponModel.Mobile)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" valign="top">
+                            <span class="colf60">*</span>房 源 地 址：
+                        </td>
+                        <td class="tdLeft">
+                            @(couponModel.Address)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" valign="top">
+                            <span class="colf60">*</span>收 款 方 式：
+                        </td>
+                        <td class="tdLeft">
+                            快有家账户余额
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdRight" valign="top">
+                            <span class="colf60">*</span>房东快有家账号：
+                        </td>
+                        <td class="tdLeft">
+                            @(couponModel.Mobile)
+                        </td>
+                    </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

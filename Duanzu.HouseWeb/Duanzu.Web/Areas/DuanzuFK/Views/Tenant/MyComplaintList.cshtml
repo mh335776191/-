@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "我的投诉";
+    Layout = "~/Areas/DuanzuFD/Views/Shared/DuanzuFD.cshtml";
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+    
+    var HouseComplaint = ViewBag.HouseComplaint;
+}
+
+<div class="right fr">
+    <!-- InstanceBeginEditable name="用户中心左侧可编辑的部分" -->
+    <div class="zm_complain">
+        <table border="0" cellspacing="" cellpadding="" width="898">
+            <thead>
+                <tr>
+                    <th>投诉申请时间</th>
+                    <th>要求退还房费</th>
+                    <th>投诉内容详情</th>
+                    <th>当前状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    if (HouseComplaint != null)
+                    {
+                        foreach (var item in HouseComplaint)
+                        { 
+                       <tr>
+                            <td>@(Convert.ToDateTime(item.CreateTime).ToString("yyyy.MM.dd HH:ss"))</td>
+                            <td>@(item.Day)天（@(item.Amount)元）</td>
+                            <td><a href="javascript:void(0);" onclick="ShowHouseComplaintInfo(@(item.Id));">查看</a></td>
+                            <td>@(item.State==0?"处理中":"已完成")</td>
+                            @{
+                            if (item.State == 0)
+                            {
+                            <td class="noborder"><a href="javascript:void(0);" onclick="UpdatePrice(@(item.Id));">修改房费</a></td>
+                            }
+                            else
+                            { 
+                             <td class="noborder"></td>
+                            }
+                            }
+                        </tr>
+                        }
+                    }
+                    else
+                    { 
+                    <tr>
+                    <td></td>
+                    <td></td>
+                    <td><a href="javascript:;"></a></td>
+                    <td></td>
+                    <td class="noborder"></td>
+                    </tr>
+                    }
+                }               
+            </tbody>
+        </table>
+    </div>
+    <!-- InstanceEndEditable -->
+</div>
+<link href="@(staticUrl)web/agent/Resource/css/bomb.css@(version)" rel="stylesheet" type="text/css" />
+<link href="@(staticUrl)web/base/js/plugs/freeui/skins/lightgray/css/dialog.css@(version)" rel="stylesheet" type="text/css" />
+<script src="@(staticUrl)web/base/js/plugs/freeui/js/freedialog.min.js@(version)" type="text/javascript"></script>
+<script type="text/javascript">
+    //查看投诉
+    function ShowHouseComplaintInfo(Id)
+    {
+        $.freeDialog.open({ title: '查看投诉', url: '/DuanzuFK/Tenant/ShowComplaintInfo?Id='+Id, height: 300, width: 720, allowClose: true, isResize: false });
+    }
+
+    //修改投诉天数
+    function UpdatePrice(Id)
+    {
+        $.freeDialog.open({ title: '修改房费', url: '/DuanzuFK/Tenant/EditComplaintInfo?Id=' + Id, height: 300, width: 720, allowClose: true, isResize: false });
+    }
+</script>

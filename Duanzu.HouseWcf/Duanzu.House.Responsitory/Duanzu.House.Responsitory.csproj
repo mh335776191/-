@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DAF75E2-4761-4FCD-AAFE-514C565A2A1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Duanzu.House.Responsitory</RootNamespace>
+    <AssemblyName>Duanzu.House.Responsitory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IBatisNet.Common, Version=1.6.2.666, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\mybatisnet\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="businessInterface\IOperate.cs" />
+    <Compile Include="Moxing\Domain.cs" />
+    <Compile Include="Moxing\Interface\IDomain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resonsitory.cs" />
+    <Compile Include="Responsitory\FavoriteResponsitory.cs" />
+    <Compile Include="Responsitory\HouseDicResponsitory.cs" />
+    <Compile Include="Responsitory\HouseResponsitory.cs" />
+    <Compile Include="ResponsitoryInterface\IResponsitory.cs" />
+    <Compile Include="Responsitory\UserCommentResponsitory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Duanzu-UserWcf\Duanzu.TXCommons\Duanzu.TXCommons.csproj">
+      <Project>{137563c9-b74c-4e4d-81d1-a33b744d96c1}</Project>
+      <Name>Duanzu.TXCommons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Duanzu.House.DataContract\Duanzu.House.DataContract.csproj">
+      <Project>{53b1ae51-c05c-4dd2-9628-01316d498708}</Project>
+      <Name>Duanzu.House.DataContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Duanzu.House.Model\Duanzu.House.Model.csproj">
+      <Project>{3b9c357a-8c53-44fe-a298-460b043bbeb8}</Project>
+      <Name>Duanzu.House.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Duanzu.House.MyBatis\Duanzu.House.MyBatis.csproj">
+      <Project>{9823415d-364f-44da-a549-3bc804311cab}</Project>
+      <Name>Duanzu.House.MyBatis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

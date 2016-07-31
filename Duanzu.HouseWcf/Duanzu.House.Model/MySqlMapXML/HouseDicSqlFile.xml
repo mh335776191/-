@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="House" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <alias>
+    <typeAlias alias="HouseDic" type="Duanzu.House.DataContract.HouseModel.DBModel.T_HouseDic,Duanzu.House.DataContract" />
+    <typeAlias alias="HouseDicQuery" type="Duanzu.House.DataContract.QueryModel.HouseDicQuery,Duanzu.House.DataContract" />
+
+  </alias>
+  <resultMaps>
+    <resultMap id="HouseDicResult" class="HouseDic">
+      <result property="DictID" column="DictID" dbType="int" type="int" />
+      <result property="Type" column="Type" dbType="tinyint" type="byte" />
+      <result property="Name" column="name" dbType="varchar" type="string" />
+    </resultMap>
+  </resultMaps>
+  <statements>
+    <select id="SelectAllHouseDic" resultMap="HouseDicResult">
+      <![CDATA[  
+      SELECT DictID
+            ,Type
+            ,Name      
+      ]]>
+    </select>
+    <select id ="SelectHouseDicByWhere" parameterClass="HouseDicQuery" resultMap="HouseDicResult" extends="SelectAllHouseDic" >
+      <![CDATA[   FROM t_housedict   ]]>
+      <dynamic prepend="where">
+        <isGreaterThan property="Type" compareValue="0" prepend="And">
+          Type=#Type#
+        </isGreaterThan>
+      </dynamic>
+    </select>
+    <select id ="SelectHouseDicById" parameterClass="int" resultMap="HouseDicResult" extends="SelectAllHouseDic" >
+      FROM t_housedict where DictID=#id#
+    </select>
+  </statements>
+</sqlMap>

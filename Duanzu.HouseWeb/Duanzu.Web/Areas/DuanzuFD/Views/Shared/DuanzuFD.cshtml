@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+@{
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+    Duanzu.TXCommons.BasicsClass.SeoModel seo = ViewBag.seo;
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="keywords" content="@(seo == null ? "" : seo.Keywords)" />
+    <meta name="description" content="@(seo == null ? "" : seo.Description)" />
+    <title>@(seo == null ? "" : seo.Title)</title>
+    <link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/common/public.css@(version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/common/base.css@(version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/short/common.css@(version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/short/usercenter.css@(version)" />
+    <script type="text/javascript" src="@(staticUrl)web/base/js/jquery-1.7.2-min.js"></script>
+</head>
+<body>
+    @Html.Partial("Top")
+    <div class="user">
+        @Html.Partial("PublicHead")
+        <div class="con w1200 clearfix">
+            <div class="left fl">
+                <dl>
+                    <dt>
+                        我是租客
+                    </dt>
+                    <dd>
+                        <a href="/DuanzuFK/Tenant/MyJourneyList">旅程记录</a>
+                    </dd>
+                    <dd>
+                        <a href="/DuanzuFK/Tenant/MyCollectHouseList">收藏的房源</a>
+                    </dd>
+                    <dd>
+                        <a href="/DuanzuFK/Tenant/MyCouponList">现金租房券</a>
+                    </dd>
+                    <dd>
+                        <a href="/DuanzuFK/Tenant/MyComplaintList">我的投诉</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        我是房东
+                    </dt>
+                    <dd>
+                        <a href="/DuanzuFD/LandLord/MyDuanzuHouseList">房源管理</a>
+                    </dd>
+                    <dd>
+                        <a href="/DuanzuFD/LandLord/FDAuthentication">权威认证</a>
+                    </dd>
+                </dl>
+            </div>
+            @RenderBody()
+        </div>
+    </div>
+    @Html.Partial("Footer")
+</body>
+</html>

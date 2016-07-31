@@ -1,0 +1,8 @@
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.User.Model\bin\Debug\Duanzu.User.Model.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.User.Model\bin\Debug\Duanzu.User.Model.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.User.Model\obj\Debug\Duanzu.User.Model.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.User.Model\obj\Debug\Duanzu.User.Model.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Model\bin\Debug\Duanzu.House.Model.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Model\bin\Debug\Duanzu.House.Model.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Model\obj\Debug\Duanzu.House.Model.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Model\obj\Debug\Duanzu.House.Model.pdb

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @{
+        string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+        string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+        Duanzu.TXCommons.BasicsClass.SeoModel seo = ViewBag.seo;
+    }
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="oSSwBIuw55" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="keywords" content="@(seo == null ? "" : seo.Keywords)" />
+    <meta name="description" content="@(seo == null ? "" : seo.Description)" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>
+        @(seo == null ? "" : seo.Title)
+    </title>
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/css/common/public.css" + version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/css/common/base.css" + version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/css/short/common.css" + version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/css/short/index.css" + version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/js/common/lib/calendar/kalendae.css" + version)" />
+    <script type="text/javascript" src="@(staticUrl + "web/agent/Resource/js/jquery-1.8.3.min.js" + version)"></script>
+    <script type="text/javascript" src="@(staticUrl + "web/agent/Resource/js/common/lib/TweenMax.js" + version)"></script>
+    <script type="text/javascript" src="@(staticUrl + "web/agent/Resource/js/common/lib/kyj.min.js" + version)"></script>
+    <script type="text/javascript" src="@(staticUrl + "web/agent/Resource/js/common/lib/calendar/kalendae.standalone.js" + version)"></script>
+    <script>
+
+        $.ajax({
+            type: "DELETE",
+            url: "http://api.duanzu.com/api/Demo",
+            data: { id: 1233},
+            success: function (msg) {
+                alert("Data Saved: " + msg);
+            }
+        });
+    </script>
+</head>
+<body>
+    @Html.Partial("Top")
+    <div class="mainer">
+        <div class="zm_home">
+            <div class="banner">
+                <div class="w1200">
+                    <ul class="txtList clearFix">
+                        <li class="fl">
+                            <h1>真房东</h1>
+                            <p>生活要慢</p>
+                        </li>
+                        <li class="fl">
+                            <h1>真房客</h1>
+                            <p>租房要快</p>
+                        </li>
+                    </ul>
+                    <dl class="seek clearFix">
+                        <dd class="fl">
+                            <input type="text" class="where" placeholder="您想去哪里？">
+                        </dd>
+                        <dd class="fl">
+                            <input type="text" data-kal="direction: 'future'" id="check" class="check auto-kal" placeholder="入住日期">
+                        </dd>
+                        <dd onoff="on" id="div17" class="div3 selected fl">
+                            <a href="javascript:;" style="display:block;" class="a1 selected_title">入住房客</a>
+                            <ul class="ul1 selected_con">
+                                <li><a href="javascript:;">1位房客</a></li>
+                                <li><a href="javascript:;">2位房客</a></li>
+                                <li><a href="javascript:;">3位房客</a></li>
+                            </ul>
+                        </dd>
+                        <dd class="fl">
+                            <input type="button" class="hunt" value="搜索" id="" name="">
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="w1200">
+                <div class="cityList mt30">
+                    <ul class="city clearFix">
+                        <li class="fl i1">
+                            <img src="@(staticUrl + "web/agent/Resource/images/short/index/city01.jpg" + version)">
+                            <a href="javascript:void(0)">城市中心</a>
+                        </li>
+                        <li class="fl i2">
+                            <img src="@(staticUrl + "web/agent/Resource/images/short/index/city02.jpg" + version)">
+                            <a href="javascript:void(0)">名校附近</a>
+                        </li>
+                        <li class="fl i3">
+                            <img src="@(staticUrl + "web/agent/Resource/images/short/index/city03.jpg" + version)">
+                            <a href="javascript:void(0)">修身养性</a>
+                        </li>
+                        <li class="fl i4">
+                            <img src="@(staticUrl + "web/agent/Resource/images/short/index/city04.jpg" + version)">
+                            <a href="javascript:void(0)">景区游玩</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="download">
+                <div class="w1200">
+                    <dl class="clearFix">
+                        <dt class="fl">
+                            <p class="iphone"><img src="@(staticUrl + "web/agent/Resource/images/short/index/zm_iphone.png" + version)"></p>
+                            <p class="sao"><img src="@(staticUrl + "web/agent/Resource/images/short/index/zm_sao.png" + version)"></p>
+                        </dt>
+                        <dd class="fr">
+                            <h1>下载快有家官方APP让租房更加方便</h1>
+                            <p>1. 随时查询、即刻订房源、入住前一天无条件退款</p>
+                            <p>2. 真房东真房客，让您的安全得已保障</p>
+                            <p>3. 加入会员，有补贴，让你的旅行说走就走 </p>
+                            <p>4. 分享您的故事，体验心得，结交天下好友！</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="w1200">
+                <div class="goodness">
+                    <h1 class="advantage">选择我们的优势</h1>
+                    <ul class="goodList clearFix">
+                        <li class="fl">
+                            <p class="img"><img src="@(staticUrl + "web/agent/Resource/images/short/index/zm_good01.jpg" + version)"></p>
+                            <h1>快捷租房有保障</h1>
+                            <p>入住前1天无条件退款</p>
+                        </li>
+                        <li class="fl">
+                            <p class="img"><img src="@(staticUrl + "web/agent/Resource/images/short/index/zm_good02.jpg" + version)"></p>
+                            <h1>真房客真房东</h1>
+                            <p>双方身份认证，安全可信任</p>
+                        </li>
+                        <li class="fl">
+                            <p class="img"><img src="@(staticUrl + "web/agent/Resource/images/short/index/zm_good03.jpg" + version)"></p>
+                            <h1>短租会员</h1>
+                            <p>加入会员有补贴</p>
+                        </li>
+                        <li class="fl">
+                            <p class="img"><img src="@(staticUrl + "web/agent/Resource/images/short/index/zm_good04.jpg" + version)"></p>
+                            <h1>贴心的服务 </h1>
+                            <p>让你感受家一样的温暖</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="join" style="left: 0px;">
+                <div class="back"></div>
+                <div class="w1200">
+                    <a href="javascript:void(0)">
+                        <dl class="clearFix">
+                            <dt class="fl">
+                                <img src="@(staticUrl + "web/agent/Resource/images/short/index/zm_joinus.png" + version)">
+                            </dt>
+                            <dd class="fl">
+                                <p>交50元 返100元租房补贴</p>
+                            </dd>
+                        </dl>
+                    </a>
+
+                    <em><img src="@(staticUrl + "web/agent/Resource/images/short/index/zm_icon.png" + version)"></em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            //逐步动画进入
+            function animationSteps() {
+                var t = new TimelineMax();
+                var oT = $(".download").offset().top;
+                var oH = $(window).height();
+                function animationStep1() {
+                    t.to(".iphone", 1, { "left": 70 });
+                    t.to(".sao", 1, { "top": 190 }, '-=0.5');
+                    t.to(".download dd", 1, { "right": 100 }, 1);
+                }
+                function animationStep2() {
+                    t.to(".iphone", 0, { "left": -700 });
+                    t.to(".sao", 0, { "top": 500 });
+                    t.to(".download dd", 0, { "right": -1000 });
+                }
+                $(window).scroll(function (ev) {
+                    ev.preventDefault();
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop >= oT - oH) {
+                        t.play();
+                        animationStep1();
+                    } else {
+                        t.stop();
+                        t.clear(true);
+                        animationStep2();
+                    }
+                });
+                $(window).scroll();
+            }
+            animationSteps();
+        });
+        kyj.selected({ ID: 'div17', type: 'click', timeSpace: '200', selectedTitle: 'a1', selectedCon: 'ul1' });
+        var k4 = new Kalendae.Input('check', {
+            months: 2,
+            mode: 'range',
+            selected: [Kalendae.moment().subtract({ M: 1 }), Kalendae.moment().add({ M: 1 })]
+        });
+        $(document).scroll(function () {
+            var oT = $(".short").height();
+            var oH = $(".goodness").offset().top
+            if ($(document).scrollTop() >= oH - 400) {
+                $(".join").stop().animate({ left: 0 }, 500);
+            } else {
+                $(".join").stop().animate({ left: "-100%" }, 100);
+            }
+
+        })
+        $(".join em").live("click", function () {
+            $(".join").animate({ left: "-100%" }, 300);
+            $(".us").show();
+        })
+        $(".us").live("click", function () {
+            $(".join").animate({ left: 0 }, 1000);
+            $(this).hide();
+        })
+    </script>
+    @Html.Partial("Footer")
+</body>
+</html>

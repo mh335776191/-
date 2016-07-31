@@ -1,0 +1,25 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    @{
+        string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+        string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+        Duanzu.TXCommons.BasicsClass.SeoModel seo = ViewBag.seo;
+    }
+    <meta name="viewport" content="width=device-width" />
+    <title>短租详情页</title>
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/css/common/public.css" + version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/css/common/base.css" + version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/css/short/common.css" + version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/css/short/main.css" + version)" />
+    <link rel="stylesheet" type="text/css" href="@(staticUrl + "web/agent/Resource/js/common/lib/calendar/kalendae.css" + version)" />
+    <script type="text/javascript" src="@(staticUrl + "web/agent/Resource/js/jquery-1.8.3.min.js" + version)"></script>
+</head>
+<body>
+    @Html.Partial("Top")
+    <div class="mainer">@ViewBag.id</div>
+    @Html.Partial("Footer")
+</body>
+</html>

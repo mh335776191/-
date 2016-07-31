@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+    
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+
+    var ComplaintInfo = ViewBag.ComplaintInfo;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>投诉处理页</title>
+    <script type="text/javascript" src="@(staticUrl)web/base/js/jquery-1.6.4.min.js"></script>
+    <link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/common/public.css@(version)">
+    <link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/short/bombbox.css?@(version)">
+    <link href="@(staticUrl)web/agent/Resource/css/bomb.css@(version)" rel="stylesheet" type="text/css" />
+    <link href="@(staticUrl)web/base/js/plugs/freeui/skins/lightgray/css/dialog.css@(version)"  rel="stylesheet" type="text/css" />
+    <script src="@(staticUrl)web/base/js/plugs/freeui/js/freedialog.min.js@(version)" type="text/javascript"></script>
+</head>
+<body>
+    <div class="lay_con">
+        <div class="lzh_tscl">
+
+            <dl class="clearfix">
+                <dt class="fl">
+                    要求退还房费：
+                </dt>
+                <dd class="fl">
+                    <em class="fb3232">@(ComplaintInfo.Day)天</em>（共计<em class="fb3232">@(ComplaintInfo.Amount)</em>元）
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt class="fl">
+                    投诉内容描述：
+                </dt>
+                <dd class="fl">
+                    @(ComplaintInfo.Desc)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="lay_submit">
+        <a class="btn btn1" href="javascript:;" onclick="HandleComplaintInfo();">同意租客要求</a><a class="btn btn2" href="javascript:;" onclick="closeWin();">关闭</a>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    function closeWin() {
+        parent.$('.l-dialog-close').trigger('click', [true]);
+    }
+
+    function HandleComplaintInfo()
+    {
+        parent.$.freeDialog.open({
+            title: "提示", content: "<div class='layer_box'><p class='text tac'>确定同意租客要求？</p></div>", height: 200, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/Duanzu.Api/DuanzuFD/HandleComplaint", { hid: hid, orderNum: orderNum, orderState: orderState }, function (response) {
+                               if (!response) {
+                                   parent.$('.l-dialog-close').trigger('click', [true]);
+                                   parent.$.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">操作失败</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                     parent.$('.l-dialog-close').trigger('click', [true]);
+                                     parent.parent.window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+</script>

@@ -1,0 +1,261 @@
+﻿@{
+    Layout = null;
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+
+    var OrderList = ViewBag.OrderList;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>房东-房源管理-查看订单</title>
+    <link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/common/public.css?@(version)">
+    <link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/short/bombbox.css?@(version)">
+    <script type="text/javascript" src="@(staticUrl)web/agent/Resource/js/common/lib/jquery-1.8.3.min.js?@(version)"></script>
+    <script type="text/javascript" src="@(staticUrl)web/agent/Resource/js/common/lib/layer/layer.js?@(version)"></script>
+</head>
+<body>
+    <div class="lay_con">
+        @{if (OrderList != null)
+          {
+        <div class="lzh_fydd">
+            <table border="1" bordercolor="#dedede">
+                <thead>
+                    <tr>
+                        <th style="text-align:center;">
+                            订单日期
+                        </th>
+                        <th style="text-align: center;">
+                            入住/退房时间
+                        </th>
+                        <th style="text-align: center;">
+                            房客
+                        </th>
+                        <th style="text-align: center;">
+                            联系方式
+                        </th>
+                        <th style="text-align: center;">
+                            订单状态
+                        </th>
+                        <th style="text-align: center;">
+                            支付租金
+                        </th>
+                        <th style="text-align: center;">
+                            收入
+                        </th>
+                        <th style="text-align: center;">
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                   @{foreach (var item in OrderList) { 
+                    <tr>
+                        <td style="text-align:center;">
+                            @(Convert.ToDateTime(item.CreateTime).ToString("yyyy.MM.dd"))
+                        </td>
+                        <td style="text-align:center;">
+                            @(Convert.ToDateTime(item.RentStartDate).ToString("yyyy.MM.dd")) ~ @(Convert.ToDateTime(item.RentEndDate).ToString("yyyy.MM.dd"))
+                        </td>
+                        <td style="text-align:center;">
+                            @(item.PeopleNumber)位
+                        </td>
+                        <td style="text-align:center;">
+                            @(item.Mobile)
+                        </td>
+                        <td style="text-align:center;">
+                            @{
+                         if (item.OrderStatus == 1)
+                         {
+                            <span class="colff6600">@(item.OrderStatusName)</span>
+                         }
+                         else if (item.OrderStatus == 2)
+                         {
+                            <span class="col45b035">@(item.OrderStatusName)</span>
+                         }
+                         else if (item.OrderStatus == 7)
+                         {
+                            <span class="colfb3232">@(item.OrderStatusName)</span>
+                         }
+                         else
+                         {
+                            <span class="">@(item.OrderStatusName)</span>
+                         }
+                            }
+                        </td>
+                        <td style="text-align:center;">
+                            @(Convert.ToDouble(item.Amount))元
+                        </td>
+                        <td style="text-align:center;">
+                            @(Convert.ToDouble(item.Amount) - item.ServiceCharge)元
+                        </td>
+                        <td style="text-align:center;">
+                            @{
+                         if (item.OrderStatus == 1)
+                         {
+                             //租客已支付，未接单
+                            <a class="btn colfb3232" href="javascript:;" onclick="HandleJieDan(@(item.HouseID),'@(item.OrderNum)',2);">接单</a>
+                                <a class="btn col3291fb" href="javascript:;" onclick="HandleJuDan(@(item.HouseID),'@(item.OrderNum)',6);">拒单</a>
+                         }
+                         else if (item.OrderStatus == 2 && item.ToushuCount > 0)
+                         {
+                             //待入住
+                            <a class="btn colfb3232" href="javascript:;" onclick="HandleComplaint(@(item.HouseID),'@(item.OrderNum)',6);">处理投诉</a>
+                         }
+                         else if (item.OrderStatus == 7)
+                         {
+                             //租客申请退房
+                            <a class="btn colfb3232" href="javascript:;" onclick="HandleTuiFang(@(item.HouseID),'@(item.OrderNum)',5);">同意退房</a>
+                                <a class="btn col3291fb" href="javascript:;" onclick="HandleRefuseTuiFang(@(item.HouseID),'@(item.OrderNum)',3);">拒绝退房</a>
+
+                             if (item.ToushuCount > 0)
+                             {
+                                 //租客投诉
+                                <a class="btn colfb3232" href="javascript:;" onclick="HandleComplaint(@(item.HouseID),'@(item.OrderNum)',5);">处理投诉</a>
+                             }
+                         }
+                            }
+                        </td>
+
+                    </tr>
+                     }
+                   }
+                </tbody>
+            </table>
+            @{if (ViewBag.totalPage > 1) {
+            <div class="page mt20">
+                <p class="pageList">
+                    @{ for (int i = 1; i <= ViewBag.totalPage; i++)
+                       {
+                           <span @(ViewBag.pageIndex==i?"class='now'":"")><a href="/DuanzuFD/LandLord/DuanzuHouseOrderList?houseId=@(ViewBag.houseId)&pn=@(i)">@(i)</a></span>
+                       }}
+                </p>
+            </div>
+              }
+          }
+        </div>
+          }
+          else
+          { 
+              //暂无订单信息
+          }       
+       }
+    </div>
+</body>
+</html>
+<!--duanzubomb-->
+<link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/short/bombbox.css?@(version)">
+<link href="@(staticUrl)web/agent/Resource/css/bomb.css@(version)" rel="stylesheet" type="text/css" />
+<link href="@(staticUrl)web/base/js/plugs/freeui/skins/lightgray/css/dialog.css@(version)" rel="stylesheet" type="text/css" />
+<script src="@(staticUrl)web/base/js/plugs/freeui/js/freedialog.min.js@(version)" type="text/javascript"></script>
+<script type="text/javascript">
+    ///接单
+    function HandleJieDan(hid, orderNum, orderState)
+    {
+        $.freeDialog.open({
+            title: "提示", content: "<div class='layer_box'><p class='text tac'>接单</p></div>", height: 200, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/Duanzu.Api/DuanzuFD/HandleJieDan", { hid: hid, orderNum: orderNum, orderState: orderState }, function (response) {
+                               if (!response) {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   $.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">操作失败</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+
+    ///拒单
+    function HandleJuDan(hid, orderNum,orderState)
+    {
+        $.freeDialog.open({
+            title: "提示", content: "<div class='layer_box'><p class='text tac'>拒单前请与您的租客充分沟通，确定拒单？</p></div>", height: 200, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/Duanzu.Api/DuanzuFD/HandleJuDan", { hid: hid, orderNum: orderNum, orderState: orderState }, function (response) {
+                               if (!response) {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   $.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">操作失败</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+
+    ///处理投诉
+    function HandleComplaint(hid, orderNum,orderState)
+    {
+       // layer.open({ type: 2, title: '处理投诉', maxmin: false, shadeClose: true, area: ['720px', '300px'], content: '/DuanzuFD/LandLord/ShowComplaintInfo?hid=' + hid + '&orderNum=' + orderNum + '&orderState=' + orderState })
+
+        $.freeDialog.open({ title: '处理投诉', url: '/DuanzuFD/LandLord/ShowComplaintInfo?hid=' + hid + '&orderNum=' + orderNum + '&orderState=' + orderState , height: 300, width: 720, allowClose: true, isResize: false });
+    }
+
+    ///同意退房
+    function HandleTuiFang(hid, orderNum, orderState)
+    {
+        $.freeDialog.open({
+            title: "提示", content: "<div class='layer_box'><p class='text tac'>同意退房</p></div>", height: 200, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/Duanzu.Api/DuanzuFD/HandleTuiFang", { hid: hid, orderNum: orderNum, orderState: orderState }, function (response) {
+                               if (!response) {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   $.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">操作失败</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+
+    ///拒绝退房
+    function HandleRefuseTuiFang(hid, orderNum, orderState)
+    {
+        $.freeDialog.open({
+            title: "提示", content: "<div class='layer_box'><p class='text tac'>拒绝退房</p></div>", height: 200, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/Duanzu.Api/DuanzuFD/HandleRefuseTuiFang", { hid: hid, orderNum: orderNum, orderState: orderState }, function (response) {
+                               if (!response) {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   $.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">操作失败</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+</script>

@@ -1,0 +1,7 @@
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Contract\bin\Debug\Duanzu.House.Contract.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Contract\bin\Debug\Duanzu.House.Contract.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Contract\bin\Debug\Duanzu.House.DataContract.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Contract\bin\Debug\Duanzu.House.DataContract.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Contract\obj\Debug\Duanzu.House.Contract.csprojResolveAssemblyReference.cache
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Contract\obj\Debug\Duanzu.House.Contract.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.Contract\obj\Debug\Duanzu.House.Contract.pdb

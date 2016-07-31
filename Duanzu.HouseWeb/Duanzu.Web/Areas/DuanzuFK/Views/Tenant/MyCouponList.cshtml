@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "MyCouponList";
+    Layout = "~/Areas/DuanzuFD/Views/Shared/DuanzuFD.cshtml";
+
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+    var couponModel=ViewBag.couponModel;
+}
+
+<div class="right fr">
+    <div class="zm_ticket clearFix">
+       @{
+    if (couponModel != null && couponModel.Count>0)
+    {
+        if (couponModel.UseState == 2)
+        {
+            <dl class="used fl" onclick="ShowCouponUsedInfo(@(couponModel.Id),2);">
+                <dt class="fl">
+                    <p><span>@(Convert.ToDouble(couponModel.Price))</span>元</p>
+                </dt>
+                <dd class="fl">
+                    <h1>已使用</h1>
+                    <p>来源：短租会员赠送</p>
+                    <p style="white-space:nowrap;">启用时间：@(Convert.ToDateTime(couponModel.starttime).ToString("yyyy.MM.dd"))日起</p>
+                </dd>
+            </dl>
+        }
+        else
+        {
+            <dl class="unused fl" onclick="ShowCouponUsedInfo(@(couponModel.Id),1);">
+                <dt class="fl">
+                    <p><span>@(Convert.ToDouble(couponModel.Price))</span>元</p>
+                </dt>
+                <dd class="fl">
+                    <h1>未使用</h1>
+                    <p>来源：短租会员赠送</p>
+                    <p style="white-space:nowrap;">启用时间：@(Convert.ToDateTime(couponModel.starttime).ToString("yyyy.MM.dd"))日起</p>
+                </dd>
+            </dl>
+        }
+    }
+    else
+    {
+            <div class="syc_kong mt10">
+                <h4 style="line-height: 100px;"> 您还没有获得任何现金租房券。</h4>
+            </div>
+           }
+}
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/dialog.css?@(version)" />
+<link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/bomb.css?@(version)" />
+<script src="@(staticUrl)web/base/js/plugs/freeui/js/freedialog.min.js?@(version)" type="text/javascript"></script>
+<script type="text/javascript">
+    $(".fl").find("dl").eq(0).find("dd").eq(2).attr("class", "active");
+
+    ///租房券使用明细
+    function ShowCouponUsedInfo(couponId,usedState)
+    {
+        var heigth=600;
+
+        if(usedState==2)
+        {
+            heigth=700;
+        }
+
+        $.freeDialog.open({ title: '租房券详情', url: '/DuanzuFK/Tenant/ShowCouponUsedInfo?id=' + couponId, height: heigth, width: 700, allowClose: true, isResize: false });
+    }
+</script>

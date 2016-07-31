@@ -1,0 +1,250 @@
+﻿@{
+    ViewBag.Title = "旅程记录";
+    Layout = "~/Areas/DuanzuFD/Views/Shared/DuanzuFD.cshtml";
+
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+    
+    var JourneryLog = ViewBag.JourneryLog;
+    var TotalPage=ViewBag.TotalPage;
+    var DuanzuMember=ViewBag.DuanzuMember;
+}
+
+<div class="right fr">
+    <!-- InstanceBeginEditable name="用户中心左侧可编辑的部分" -->
+    <div class="zm_trip">
+        @{
+            
+            if (JourneryLog != null)
+            {
+            <table border="0" cellspacing="" cellpadding="" width="898">
+            <thead>
+                <tr>
+                    <th>订单日期</th>
+                    <th>入住/退房时间</th>
+                    <th>房源编号</th>
+                    <th>房客</th>
+                    <th>房东联系方式</th>
+                    <th>支付租金</th>
+                    <th>退订政策</th>
+                    <th>订单状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{foreach (var item in JourneryLog) { 
+                  
+                <tr>
+                    <td>@(Convert.ToDateTime(item.CreateTime).ToString("yyyy.MM.dd"))</td>
+                    <td>@(Convert.ToDateTime(item.RentStartDate).ToString("yyyy.MM.dd")) ~ @(Convert.ToDateTime(item.RentEndDate).ToString("yyyy.MM.dd"))</td>
+                    <td class="blue">@(item.HouseID)</td>
+                    <td>@(item.PeopleNumber)位</td>
+                    <td>@(DuanzuMember==1?item.LandlordMobile:"")</td>
+                    <td>@(item.Amount)元</td>
+                    <td><a href="javascript:void(0);" onclick="ShowRemind();">查看</a></td>
+                      @{
+                      if (item.OrderStatus == 0)
+                      {
+                        <td class="colf60">@(item.OrderStatusName)</td>
+                      }
+                      else if (item.OrderStatus == 2)
+                      {
+                        <td class="green">@(item.OrderStatusName)</td>
+                      }
+                      else if (item.OrderStatus == 3)
+                      {
+                        <td class="red">@(item.OrderStatusName)</td>
+                      }
+                      else if (item.OrderStatus == 7)
+                      {
+                        <td class="red">@(item.OrderStatusName)</td>
+                      }
+                      else
+                      {
+                       <td>@(item.OrderStatusName)</td>
+                      }
+                        
+                      }
+
+                    @{
+                      if (item.OrderStatus == 0)
+                      { 
+                          //待支付
+                          <td class="noborder"><a href="#">去支付</a></td>
+                      }
+                      else if (item.OrderStatus == 2)
+                      { 
+                          //待入住
+                          <td class="noborder">
+
+                            @{if (item.TouSuCount <= 0)
+                              {
+                                var wyCount=0;
+                                var cutPrice = 0;
+                                if ((Convert.ToDateTime(item.RentStartDate).Day - DateTime.Now.Day) >= item.RentBeforeDays)
+                                {
+                                    wyCount = 1;
+                                    cutPrice = item.Amount / (Convert.ToDateTime(item.RentEndDate).Day - Convert.ToDateTime(item.RentStartDate).Day);
+                                    cutPrice = cutPrice * item.DeductDays;
+                                }
+                                <a href="javascript:void(0);" onclick="HandleCancleOrder('@(item.OrderNum)',@(item.HouseID),@(wyCount),@(cutPrice));">取消订单</a>
+                                <a href="javascript:void(0);" onclick="ApplyComplaint(@(item.Id));">投诉</a>
+                              }
+}
+                          </td>
+                      }
+                      else if (item.OrderStatus == 3)
+                      { 
+                         //入住中
+                          <td class="noborder">
+                          @{if (item.item.TouSuCount <= 0)
+                            {
+                                var tuiPrice = item.Amount / (Convert.ToDateTime(item.RentEndDate).Day - Convert.ToDateTime(item.RentStartDate).Day);
+                                tuiPrice = tuiPrice * (Convert.ToDateTime(item.RentEndDate).Day - Convert.ToDateTime(item.RentStartDate).Day - item.DeductDays);
+                          <a href="javascript:void(0);" onclick="ApplyTuiFang('@(item.OrderNum)',@(item.HouseID),@(tuiPrice));">申请退房</a>
+                          <a href="javascript:void(0);" onclick="ApplyComplaint(@(item.Id));">投诉</a>
+                            }
+}
+                          </td>
+                      }
+                      else if (item.OrderStatus == 7)
+                      { 
+                         //申请退房中
+                          <td class="noborder">
+                          @{if (item.item.TouSuCount <= 0)
+                            {
+                                <a href="javascript:void(0);" onclick="ApplyComplaint(@(item.Id));">投诉</a>
+                            }
+                            }
+                          </td> 
+                      }
+                      else if (item.OrderStatus == 4)
+                      { 
+                          //入住完成，待评价
+                         <td class="noborder"><a href="javascript:void(0);">评价</a></td>
+                      }
+                      else
+                      { 
+                         <td class="noborder"></td>
+                      }
+                    }
+                </tr>
+                  }
+            }
+            </tbody>
+        </table>
+            }
+            else
+            { 
+               //暂无数据
+            }
+        }
+    </div>
+    <!-- InstanceEndEditable -->
+</div>
+<!--kyjbomb-->
+<link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/dialog.css@(version)" />
+<link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/bomb.css@(version)" />
+<link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/short/bombbox.css@(version)">
+<script src="@(staticUrl)web/base/js/plugs/freeui/js/freedialog.min.js@(version)" type="text/javascript"></script>
+<script type="text/javascript">
+    //取消订单
+    function HandleCancleOrder(OrderNum, HouseID, wyCount, cutPrice)
+    {
+        var content = '取消订单前请与您的房东充分沟通，确定取消订单？';
+
+        if (wyCount > 0)
+        {
+            //违约
+            content = '取消订单前请与您的房东充分沟通，根据约定需扣除您'+cutPrice+'元违约金补偿给房东，确定取消订单？';
+        }
+
+        $.freeDialog.open({
+            title: "提示", content: "<div class='layer_box'><p class='text tac'>"+content+"</p></div>", height: 180, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/api/DuanzuFK/HandleCancleOrder", { hid: hid, OrderNum: OrderNum, cutPrice: cutPrice }, function (response) {
+                               if (!response) {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   $.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">操作失败！</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+
+    //申请退房
+    function ApplyTuiFang(OrderNum,HouseID,tuiPrice)
+    {
+        var content = '<div class="lay_con">'+
+        '<div class="zm_qwrz zm_notice" style="margin-top: 20px;">'+
+        ' <p>如房东在6小时内未操作，则默认同意您的申请，将退还<br>您'+tuiPrice+'元房费（如有违约会按约定扣除违约金）<br>确定申请退房？</p>'+
+        '</div>' +
+        '</div>';
+
+        $.freeDialog.open({
+            title: "提示", content: content, height: 180, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/api/DuanzuFK/ApplyTuiFang", { hid: hid, OrderNum: OrderNum, tuiPrice: tuiPrice }, function (response) {
+                               if (!response) {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   $.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">操作失败！</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+
+    //申请投诉
+    function ApplyComplaint(OrderId)
+    {
+        $.freeDialog.open({ title: '投诉', url: '/DuanzuFK/Tenant/ApplyComplaint?OrderId=' + OrderId, height: 300, width: 720, allowClose: true, isResize: false });
+    }
+
+    function CloseWin() {
+        $('.l-dialog-close').trigger('click', [true]);
+    }
+
+    ///查看提醒
+    function ShowRemind()
+    {
+        var content='<div class="lay_con">'+
+                    '<div class="zm_tuid">'+
+                    '<p class="mt15"><img src="@(staticUrl)web/agent/Resource/images/short/bomb/zm_tuid.png@(version)"/></p>'+
+                    '<ul class="clearFix">'+
+                    '<li>'+
+                    '<p> 如取消订单，<br />房费全部退还</p>'+
+                    '</li>'+
+                    '<li>'+
+                    '<p>如取消订单，<br />扣除1天的房费。</p>'+
+                    '</li>'+
+                    '<li>'+
+                    '<p>如提前退房，<br />扣除1天的房费。</p>'+
+                    '</li>'+
+                    '</ul>'+
+                    '</div>'+
+                    '</div>'+
+                    '<div class="lay_submit">'+
+                    '<a class="btn btn2" href="javascript:void(0);" onclick=CloseWin();">关闭</a>' +
+                    '</div>';
+
+        $.freeDialog.open({ title: '退订政策', content: content, height: 400, width: 800, allowClose: true, isResize: false });
+    }
+</script>

@@ -1,0 +1,5 @@
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Log4netService\bin\Debug\Log4netService.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Log4netService\bin\Debug\Log4netService.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Log4netService\bin\Debug\log4net.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Log4netService\obj\Debug\Log4netService.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWeb\Log4netService\obj\Debug\Log4netService.pdb

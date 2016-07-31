@@ -1,0 +1,4 @@
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.DataContract\bin\Debug\Duanzu.House.DataContract.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.DataContract\bin\Debug\Duanzu.House.DataContract.pdb
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.DataContract\obj\Debug\Duanzu.House.DataContract.dll
+D:\project_kuaiyoujia\UI\短租\Duanzu.HouseWcf\Duanzu.House.DataContract\obj\Debug\Duanzu.House.DataContract.pdb

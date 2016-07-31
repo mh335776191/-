@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "房客-收藏的房源";
+    Layout = "~/Areas/DuanzuFD/Views/Shared/DuanzuFD.cshtml";
+    
+    string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+    string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+    var CollectHouselist = ViewBag.CollectHouselist;
+}
+
+<div class="right fr">
+    @{
+        if (CollectHouselist != null)
+        {
+            <table border="1" width="100%" bordercolor="#e6e6e6" class="lzh_fygl">
+                <thead bgcolor="#e6e6e6">
+                    <tr>
+                        <th width="80%">
+                            房源信息
+                        </th>
+                        <th width="20%" style="text-align:center;">
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                @{foreach (var item in CollectHouselist)
+                {
+                    <tbody>
+                        <tr>
+                            <td colspan="2" style="padding:0;">
+                                <ul class="clearfix">
+                                    <li class="fl">
+                                        出租方式：@(Duanzu.TXCommons.BasicsClass.HouseType.GetRentType(item.RentType))
+                                    </li>
+                                    <li class="fl">
+                                        发布时间：@(Convert.ToDateTime(item.CreateTime).ToString("yyyy.MM.dd"))
+                                    </li>
+                                    <li class="fl last">
+                                        收藏时间：@(Convert.ToDateTime(item.CollectTime).ToString("yyyy.MM.dd"))
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl class="clearfix">
+                                    <dt class="fl">
+                                        @{
+                                        var pictureInfo = new TXImage.PictureModel.RentHouse.RentHousePictureInfo();
+
+                                        try
+                                        {
+                                            var listAll = new List<TXImage.PictureModel.RentHouse.RentHousePictureInfo>();
+                                            var listLr = TXImage.GetPicture.RentHouse.GetPicture.GetRentHousePictureList(item.HousePhoto, true, "LIVINGROOM", item.CityID);//室内图列表
+                                            var listRt = TXImage.GetPicture.RentHouse.GetPicture.GetRentHousePictureList(item.HousePhoto, true, "ROOMTYPE", item.CityID);//户型图
+                                            var listVl = TXImage.GetPicture.RentHouse.GetPicture.GetRentHousePictureList(item.HousePhoto, true, "VILLAGE", item.CityID);//小区环境图
+                                            var listOt = TXImage.GetPicture.RentHouse.GetPicture.GetRentHousePictureList(item.HousePhoto, true, "OTHER", item.CityID);//其它
+
+                                            if (listLr != null) { listAll.AddRange(listLr); }
+
+                                            if (listRt != null) { listAll.AddRange(listRt); }
+                                            if (listVl != null) { listAll.AddRange(listVl); }
+                                            if (listOt != null) { listAll.AddRange(listOt); }
+
+                                            listAll = listAll.OrderByDescending(it => it.iscover).ThenByDescending(it => it.ID).ToList();
+
+                                            var piclist = listAll;
+
+                                            if (piclist != null)
+                                            {
+                                                foreach (var picItem in piclist)
+                                                {
+                                                    if (picItem.Path != "")
+                                                    {
+                                                        pictureInfo = picItem;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        catch
+                                        {
+                                            pictureInfo = new TXImage.PictureModel.RentHouse.RentHousePictureInfo();
+                                        }
+                                        }
+                                        <a href="" target="_blank">
+                                            @{if (!string.IsNullOrEmpty(pictureInfo.Path))
+                                            {
+                                                <img src="@(pictureInfo.Path).240_180.jpg" width="212" height="179">
+                                            }
+                                            else
+                                            {
+                                                <img src="@(staticUrl)web/agent/Resource/images/short/usercenter/img1.png@(version)" alt="">
+                                            }
+                                            }
+                                        </a>
+                                    </dt>
+                                    <dd class="fr">
+                                        <h5 class="text_hide">@(item.Title)</h5>
+                                        <p>租金：@(item.RentPrice)元/晚    最多宜居人数：@(item.PeopleNumber)人</p>
+                                        <p>位置：@(item.Address)<a class="col3e88db ml20 mr10" href="#">地图</a><em style="color:#3e88db;">|</em><a class="col3e88db ml10" href="#">街景</a></p>
+                                        <p>户型：@(item.Room)室@(item.Hall)厅@(item.Toilet)卫@(item.Kitchen)厨@(item.Balcony)阳</p>
+                                    </dd>
+                                </dl>
+                            </td>
+                            <td>
+                                <p class="ta_c"><a class="col3e88db" href="javascript:void(0);" onclick="DelCollectionHouse(@(item.HouseID),@(item.CityID));">删除</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+                }
+            </table>
+        }
+        else
+        {
+            //暂无短租房源
+        }
+    }
+</div>
+<script type="text/javascript">
+    $(".fl").find("dl").eq(0).find("dd").eq(1).attr("class", "active");
+</script>
+<!--kyjbomb-->
+<link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/dialog.css@(version)" />
+<link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/bomb.css@(version)" />
+<link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/short/bombbox.css@(version)">
+<script src="@(staticUrl)web/base/js/plugs/freeui/js/freedialog.min.js@(version)" type="text/javascript"></script>
+<script type="text/javascript">
+    //删除收藏房源
+    function DelCollectionHouse(hid,city)
+    {
+        $.freeDialog.open({
+            title: "提示", content: "<div class='layer_box'><p class='text tac'>确定删除此房源？</p></div>", height: 180, width: 612, allowClose: true, buttons: [
+                   {text: "确定", onclick: function (item, dialog) {
+                       $.post("/api/DuanzuFK/DelHouse", { hid: hid, city: city }, function (response) {
+                           if (!response.result) {
+                               $('.l-dialog-close').trigger('click', [true]);
+                               $.freeDialog.open({
+                                   title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">' + response.message + '</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                               });
+                           } else {
+                               $('.l-dialog-close').trigger('click', [true]);
+                               window.location.reload();
+                           }
+                       });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+</script>

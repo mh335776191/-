@@ -1,0 +1,239 @@
+﻿@{      ViewBag.Title = "房东-房源管理";
+        Layout = "~/Areas/DuanzuFD/Views/Shared/DuanzuFD.cshtml";
+        
+        string staticUrl = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl;
+        string version = "?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+        var HouseList = ViewBag.Houselist;
+}
+
+<div class="right fr">
+    @{
+        if (HouseList != null)
+        { 
+        <table border="1" width="100%" bordercolor="#e6e6e6" class="lzh_fygl">
+        <thead bgcolor="#e6e6e6">
+            <tr>
+                <th width="80%">
+                    房源信息
+                </th>
+                <th width="20%" style="text-align:center;">
+                    操作
+                </th>
+            </tr>
+        </thead>
+            @{foreach (var item in HouseList) { 
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="padding:0;">
+                            <ul class="clearfix">
+                                <li class="fl">
+                                    出租方式：@(Duanzu.TXCommons.BasicsClass.HouseType.GetRentType(item.RentType))
+                                </li>
+                                <li class="fl">
+                                    发布时间：@(Convert.ToDateTime(item.CreateTime).ToString("yyyy.MM.dd"))
+                                </li>
+                                <li class="fl last">
+                                    @(item.Status == 1 ? "已上架" : "已下架")
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <dl class="clearfix">
+                                <dt class="fl">
+                                    @{
+                                      var pictureInfo = new TXImage.PictureModel.RentHouse.RentHousePictureInfo();
+
+                                      try
+                                      {
+                                              var listAll = new List<TXImage.PictureModel.RentHouse.RentHousePictureInfo>();
+                                              var listLr = TXImage.GetPicture.RentHouse.GetPicture.GetRentHousePictureList(item.HousePhoto, true, "LIVINGROOM", item.CityID);//室内图列表
+                                              var listRt = TXImage.GetPicture.RentHouse.GetPicture.GetRentHousePictureList(item.HousePhoto, true, "ROOMTYPE", item.CityID);//户型图
+                                              var listVl = TXImage.GetPicture.RentHouse.GetPicture.GetRentHousePictureList(item.HousePhoto, true, "VILLAGE", item.CityID);//小区环境图
+                                              var listOt = TXImage.GetPicture.RentHouse.GetPicture.GetRentHousePictureList(item.HousePhoto, true, "OTHER", item.CityID);//其它
+
+                                              if (listLr != null) { listAll.AddRange(listLr); }
+
+                                              if (listRt != null) { listAll.AddRange(listRt); }
+                                              if (listVl != null) { listAll.AddRange(listVl); }
+                                              if (listOt != null) { listAll.AddRange(listOt); }
+
+                                              listAll = listAll.OrderByDescending(it => it.iscover).ThenByDescending(it => it.ID).ToList();
+
+                                              var piclist = listAll;
+
+                                              if (piclist != null)
+                                              {
+                                                  foreach (var picItem in piclist)
+                                                  {
+                                                      if (picItem.Path != "")
+                                                      {
+                                                          pictureInfo = picItem;
+                                                          break;
+                                                      }
+                                                  }
+                                              }
+                                      }
+                                      catch
+                                      {
+                                          pictureInfo = new TXImage.PictureModel.RentHouse.RentHousePictureInfo();
+                                      }
+                                    }
+                                    <a href="" target="_blank">
+                                        @{if (!string.IsNullOrEmpty(pictureInfo.Path))
+                                          {
+                                              <img src="@(pictureInfo.Path).240_180.jpg" width="212" height="179">
+                                          }
+                                          else { 
+                                             <img src="@(staticUrl)web/agent/Resource/images/short/usercenter/img1.png@(version)" alt="">
+                                          }
+                                        }
+                                    </a>
+                                </dt>
+                                <dd class="fr">
+                                    <h5 class="text_hide">@(item.Title)</h5>
+                                    <p>租金：@(item.RentPrice)元/晚    最多宜居人数：@(item.PeopleNumber)人</p>
+                                    <p>位置：@(item.Address)<a class="col3e88db ml20 mr10" href="#">地图</a><em style="color:#3e88db;">|</em><a class="col3e88db ml10" href="#">街景</a></p>
+                                    <p>户型：@(item.Room)室@(item.Hall)厅@(item.Toilet)卫@(item.Kitchen)厨@(item.Balcony)阳</p>
+                                </dd>
+                            </dl>
+                        </td>
+                        <td>
+                            @{if (item.AuditState == 0 || item.AuditState == 2)
+                              {
+                                <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">查看订单</a></p>
+                                
+                                 if (item.AuditState == 2)
+                                  {
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)" onclick="UpdateHouseState(@(item.HouseID),@(item.CityID),1);">上架</a></p>
+                                    <p class="ta_c"><a class="col3e88db" href="#">修改</a></p>
+                                  }
+                                  else
+                                  { 
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">上架</a></p>
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">修改</a></p>
+                                  }
+                                <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">退保真金</a></p>
+                              }
+                              else
+                              {
+                                  if (item.Status == 1)
+                                  {
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)" onclick="ShowDuanzuHouseOrderList(@(item.HouseID));">查看订单</a></p>
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)" onclick="UpdateHouseState(@(item.HouseID),@(item.CityID),0);">下架</a></p>
+                                    <p class="ta_c"><a class="col3e88db" href="#">修改</a></p>
+                                    
+                                    if(item.OrderStatus>0){
+                                         <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">退保真金</a></p>
+                                      }else{
+                                         <p class="ta_c"><a class="col3e88db" href="javascript:void(0)" onclick="TuiBaoZhen(@(item.HouseID),@(item.CityID));">退保真金</a></p>
+                                      }
+                                  }
+                                  else
+                                  { 
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)" onclick="ShowDuanzuHouseOrderList(@(item.HouseID));">查看订单</a></p>
+                                
+                                    if (item.PayStatus == 1 && item.PayAmount == 0)
+                                      {
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">上架</a></p>
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">修改</a></p>
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">退保真金</a></p>
+                                      }
+                                      else { 
+                                    <p class="ta_c"><a class="col3e88db" href="javascript:void(0)" onclick="UpdateHouseState(@(item.HouseID),@(item.CityID),1);">上架</a></p>
+                                    <p class="ta_c"><a class="col3e88db" href="#">修改</a></p>
+                                    
+                                    if(item.OrderStatus>0){
+                                         <p class="ta_c"><a class="col3e88db" href="javascript:void(0)">退保真金</a></p>
+                                      }else{
+                                         <p class="ta_c"><a class="col3e88db" href="javascript:void(0)" onclick="TuiBaoZhen(@(item.HouseID),@(item.CityID));">退保真金</a></p>
+                                      } 
+                                      }
+                                  }
+                              }
+              }
+                        </td>
+                    </tr>
+                </tbody>
+              }
+        }
+    </table>
+        }
+        else
+        { 
+           //暂无短租房源
+        } 
+    }
+</div>
+<script type="text/javascript">
+   $(".fl").find("dl").eq(1).find("dd").eq(0).attr("class", "active");
+</script>
+<!--kyjbomb-->
+<link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/dialog.css?@(version)" />
+<link rel="stylesheet" type="text/css" href="@(staticUrl)web/agent/Resource/css/bomb.css?@(version)" />
+<script src="@(staticUrl)web/base/js/plugs/freeui/js/freedialog.min.js?@(version)" type="text/javascript"></script>
+<!--duanzubomb-->
+<link rel="stylesheet" href="@(staticUrl)web/agent/Resource/css/short/bombbox.css?@(version)">
+<script type="text/javascript" src="@(staticUrl)web/agent/Resource/js/common/lib/layer/layer.js?@(version)"></script>
+<script type="text/javascript" src="@(staticUrl)web/agent/Resource/js/short/lay_bomb.js?@(version)"></script>
+<script type="text/javascript">
+    //房源上下架
+    function UpdateHouseState(hid, city, state)
+    {
+        $.freeDialog.open({
+            title: state==0?"下架房源":"上架房源", content: "<div class='layer_box'><p class='text tac'>下架房源后租客将无法看到您的房源，确定要将此房源下架吗？</p></div>", height: 180, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/api/DuanzuFD/UpdateHouseState", { hid: hid, city: city, state: state }, function (response) {
+                               if (!response.result) {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   $.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">' + response.message + '</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+
+    //退出保真金
+    function TuiBaoZhen(hid,city)
+    {
+        $.freeDialog.open({
+            title: "退保真金", content: "<div class='layer_box'><p class='text tac'>退保真金后将下架您的房源，并且无法进行修改和上架操作，我们会尽快将保真金转入您的快有家账户余额。</p></div>", height: 200, width: 612, allowClose: true, buttons: [
+                   {
+                       text: "确定", onclick: function (item, dialog) {
+                           $.post("/Duanzu.Api/DuanzuFD/TuiBaoZhen", { hid: hid, city: city }, function (response) {
+                               if (!response) {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   $.freeDialog.open({
+                                       title: '提示', content: '<div class=\"layer_box\"><p class=\"text tac\">操作失败</p></div>', height: 180, width: 612, allowClose: true, isResize: false
+                                   });
+                               } else {
+                                   $('.l-dialog-close').trigger('click', [true]);
+                                   window.location.reload();
+                               }
+                           });
+                       }
+                   },
+                   { text: "取消", onclick: function (item, dialog) { dialog.close(); } }
+            ], isResize: false
+        });
+    }
+
+    //查看订单
+    function ShowDuanzuHouseOrderList(hid)
+    {
+        //layer.open({ type: 2, title: "房源订单", maxmin: false, shadeClose: true, area: ['1250px', '440px'], content: '/DuanzuFD/LandLord/DuanzuHouseOrderList?houseId=' + hid });
+
+        $.freeDialog.open({ title: '处理投诉', url: '/DuanzuFD/LandLord/DuanzuHouseOrderList?houseId=' + hid, height: 500, width: 1250, allowClose: true, isResize: false });
+    }
+</script>
+

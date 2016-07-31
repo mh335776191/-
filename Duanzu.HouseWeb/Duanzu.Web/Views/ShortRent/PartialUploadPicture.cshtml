@@ -1,0 +1,140 @@
+﻿@using Duanzu.TXCommons
+@model Duanzu.TXCommons.BasicsClass.ImageInfo
+@{
+    var Model = ViewData["ImgModel"] as Duanzu.TXCommons.BasicsClass.ImageInfo;
+    var staticbs = Url.Content(Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl);
+    var btnImg = Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl + "web/agent/Resource/images/kyj/vip/addimg_03.png?v=" + Duanzu.TXCommons.BasicsClass.PubConstant.Version;
+    var uploadUrl = "/Ajax/UploadFile" + "?para=" + Model._Guid + "^" + Model.PictureType + "^" + Model.Maxnum + "^" + Model.CityID;
+}
+
+<ul id="duanzu_ul" class="upload clearFix">   
+           
+    <li class="uploadPic" style="overflow: hidden; width: 106px; height: 126px;">
+        @if (!Duanzu.TXCommons.BasicsClass.PubConstant.AllowSpecialBrower.Contains(Request.Browser.Browser.ToLower()))
+        {
+            <input type="file" name="input_uploadify" id="input_uploadify"
+                   value="浏览" class="sctp_a1" />
+            <div id="input_fileQueue" style="float: left; margin-left: 10px;">
+            </div>
+        }
+        else
+        {
+            <div name="input_uploadify" id="input_uploadify" class="sctp_a1">
+            </div>
+        }
+        @if (Duanzu.TXCommons.BasicsClass.PubConstant.AllowSpecialBrower.Contains(Request.Browser.Browser.ToLower()))
+        {
+            <script type="text/javascript">
+                $(function(){
+                     
+                    var b =false;
+                    $('#input_uploadify').Huploadify({
+                        auto:true,
+                        fileTypeExts:'*.jpg;*.png;*.jpeg;*.gif',
+                        multi:true,
+                        fileSizeLimit:999999999,
+                        breakPoints:true,
+                        saveInfoLocal:true,
+                        showUploadedPercent:true,
+                        showUploadedSize:true,
+                        buttonImage: '@btnImg',
+                        width: "106", //图片宽
+                        height: "125", //图片高
+                        showUploadedPercent: false, //不显示进度
+                        showUploadedSize: false,
+                        removeTimeout:999999999,
+                        uploader:'@uploadUrl',
+                        isRent:true,
+                        maxCount:24,
+                        onUploadStart:function(){
+                            var html ="<li style=\"overflow:hidden;position:relative; width:106px; height:126px;\"><div class=\"round_logo\" style=\"width:106px; height:126px;position:relative;\"><div class=\"div1\" style=\"width:70px; height:70px;position:absolute;left:50%;top:50%;margin-left:-35px; margin-top:-35px;z-index:1;\"><img src=\"@(Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl)web/agent/Resource/images/kyj/baozhenfy/q.png\" width=\"70\" height=\"70\" alt=\"\"></div><div class=\"div2\" style=\"width:70px; height:70px;position:absolute;left:50%;top:50%;margin-left:-35px; margin-top:-35px;z-index:2;\"><img src=\"<%=@(Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl)web/agent/Resource/images/kyj/baozhenfy/l.png\" width=\"70\" height=\"70\" alt=\"\"></div></div></li>";
+                            $("#duanzu_ul").append(html);
+                        },
+                        onUploadSuccess:function(fileObj,response){
+                            $(".div1").parent().parent().remove();
+                            if (response != "exceedmaxnum") {
+                                UploadAloneCallBack(response, 'duanzu_ul', @Model.Maxnum, '', "@Model._Guid");
+                            }
+                            else{
+                                b=true;
+                            }
+                        },
+                        onQueueComplete:function(){
+                            if(b){
+                                alert("最多上传+@Model.Maxnum+张");
+                            }
+                        }
+
+                    });
+
+                });
+            </script>
+        }
+        else
+        {
+            <script type="text/javascript">
+
+                $(function () {
+                     
+                    var isalert = false;
+                    $("#input_uploadify").uploadify({
+                        'uploader': '/Scripts/uploadify/uploadify.swf',
+                        'script': '@uploadUrl',
+                        'scriptData': { 'cityid': 253},
+                        'cancelImg': '@(Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl)web/base/js/plugs/uploadify/cancel.png',
+                        'folder': 'uploads',
+                        'queueID': 'input_fileQueue',
+                        'auto': true,
+                        'scriptAccess': 'always',
+                        'multi': true,
+                        'queueSizeLimit': '@Model.Maxnum',
+                        'width': '106',
+                        'height': '125',
+                        'wmode': 'opaque',
+                        'fileExt': '*.jpg;*.jpeg;*.gif;*.png;',
+                        'fileDesc': '请选择图片文件:*.jpg;*.jpeg;*.gif;*.png;',
+                        'buttonText': '点击上传',
+                        'buttonImg': '@btnImg',
+                        'sizeLimit': 10 * 1024 * 1024,
+                        'removeCompleted': false,
+                        onSelect :function(){
+                            var html ="<li style=\"overflow:hidden;position:relative; width:106px; height:126px;\"><div class=\"round_logo\" style=\"width:106px; height:126px;position:relative;\"><div class=\"div1\" style=\"width:70px; height:70px;position:absolute;left:50%;top:50%;margin-left:-35px; margin-top:-35px;z-index:1;\"><img src=\"@(Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl)web/agent/Resource/images/kyj/baozhenfy/q.png\" width=\"70\" height=\"70\" alt=\"\"></div><div class=\"div2\" style=\"width:70px; height:70px;position:absolute;left:50%;top:50%;margin-left:-35px; margin-top:-35px;z-index:2;\"><img src=\"@(Duanzu.TXCommons.BasicsClass.PubConstant.StaticBaseUrl)web/agent/Resource/images/kyj/baozhenfy/l.png\" width=\"70\" height=\"70\" alt=\"\"></div></div></li>";
+                            $("#duanzu_ul").append(html);
+                        },
+                        onComplete: function (event, queueId, fileObj, response, data) {
+                            $(".div1").parent().parent().remove();
+                            if (response != "error") {
+                                if (response != "exceedmaxnum") {
+                                    UploadAloneCallBack(response, 'duanzu_ul', @Model.Maxnum, '', "@Model._Guid");
+                                } else {
+                                    isalert = true;
+                                    $("#input_uploadify").uploadifyClearQueue();
+                                }
+                            }
+                        },
+                        onAllComplete:function(){
+                            if(isalert){
+                                alert("最多上传+@Model.Maxnum+张");
+                            }
+                        },
+                        onSelectOnce: function (event, data) {
+                            $('#input_uploadify').uploadifySettings('scriptData', { 'cityid': 253 });
+                        },
+                        onQueueFull: function (event, queueSizeLimit) {
+                            alert("每组最多上传+@Model.Maxnum+张");
+                            isalert = false;
+                        },
+                        onError: function (event, queueId, fileObj, errorObj) {
+                            if (errorObj) {
+                                if (errorObj.type == "File Size") {
+                                    alert("上传文件不能超过10M！");
+                                }
+                            }
+                        }
+                    });
+                })
+            </script>
+        }
+    </li>
+    <li><input id="HousePhoto" name="HousePhoto" value="@Model._Guid" type="hidden" /></li>
+</ul>
